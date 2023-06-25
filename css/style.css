@@ -12,6 +12,13 @@ nav{
   margin: 10px 10%;
   border-radius: 10px;
 }
+.nav-link a {
+  color:#bbb;
+}
+.nav-link a:hover{
+  color:#ec7700;
+  transition: all 0.2s;
+}
 .bw-full-width{
   width:80%;
   max-width: 1600px;
