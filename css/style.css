@@ -9,18 +9,6 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-.w-4{
-  width:40%;
-}
-.w-6{
-  width:60%;
-}
-.d-flex{
-  display: flex;
-}
-.fd-row{
-  flex-direction: row;
-}
 .scroll-section {
   height: 100vh;
   display: grid;
