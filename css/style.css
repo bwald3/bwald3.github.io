@@ -18,9 +18,7 @@ body{
   flex-direction: row;
   flex-wrap:wrap;
   width:100%;
-}
-.perspective-container{
-  perspective: 1000px;
+  justify-content: center;
 }
 .hero-container .moving-container{
   background-color: #444444;
@@ -28,9 +26,12 @@ body{
   min-height:600px;
   height:80vh;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero-container .moving-container img{
-  max-width:100%;
+  max-width:80%;
 }
 .hero-container .hero-text{
   width:60%;
