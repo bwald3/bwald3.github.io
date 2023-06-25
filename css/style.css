@@ -31,6 +31,10 @@ body{
   min-height:600px;
   height:80vh;
 }
+.hero-container .hero-text .hero-discription{
+  display: flex;
+  flex-direction: row;
+}
 .slide-text{
   background-color: #444444;
   padding:30px;
