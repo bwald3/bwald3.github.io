@@ -3,6 +3,9 @@ body{
   color:#f2f2f2;
   font-family: 'Poppins', sans-serif;
 }
+nav{
+  z-index: 10000;
+}
 .bw-full-width{
   width:80%;
   max-width: 1600px;
