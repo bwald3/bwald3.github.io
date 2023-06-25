@@ -12,10 +12,10 @@ nav{
   margin: 10px 10%;
   border-radius: 10px;
 }
-.nav-link a {
+a.nav-link{
   color:#bbb;
 }
-.nav-link a:hover{
+a.nav-link:hover{
   color:#ec7700;
   transition: all 0.2s;
 }
