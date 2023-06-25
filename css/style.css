@@ -26,6 +26,9 @@ body{
   height:80vh;
   border-radius: 10px;
 }
+.hero-container .moving-container img{
+  max-width:100%;
+}
 .hero-container .hero-text{
   width:60%;
   min-height:600px;
