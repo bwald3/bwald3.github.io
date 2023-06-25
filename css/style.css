@@ -6,6 +6,8 @@ body{
 .bw-full-width{
   width:80%;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .scroll-section {
   height: 100vh;
@@ -19,13 +21,13 @@ body{
 }
 .hero-container .moving-container{
   background-color: #444444;
-  width:30%;
+  width:40%;
   min-height:600px;
   height:80vh;
   border-radius: 10px;
 }
 .hero-container .hero-text{
-  width:70%;
+  width:60%;
   min-height:600px;
   height:80vh;
 }
