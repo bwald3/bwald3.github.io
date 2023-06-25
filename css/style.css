@@ -6,6 +6,9 @@ body{
 nav{
   z-index: 10000;
 }
+.navbar{
+  background-color: rgba(24, 24, 24, 0.98)
+}
 .bw-full-width{
   width:80%;
   max-width: 1600px;
