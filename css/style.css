@@ -19,6 +19,9 @@ body{
   flex-wrap:wrap;
   width:100%;
 }
+.perspective-container{
+  perspective: 1000px;
+}
 .hero-container .moving-container{
   background-color: #444444;
   width:40%;
