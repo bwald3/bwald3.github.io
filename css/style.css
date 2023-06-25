@@ -60,5 +60,10 @@ body{
   border-radius: 10px;
 }
 .work-img-container{
+  display: flex;
+  align-items: baseline;
+}
+.work-img-container img{
+  max-width: 100%;
   border-radius: 10px;
 }
