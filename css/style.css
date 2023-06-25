@@ -3,6 +3,10 @@ body{
   color:#f2f2f2;
   font-family: 'Poppins', sans-serif;
 }
+.bw-full-width{
+  width:80%;
+  max-width: 1600px;
+}
 .scroll-section {
   height: 100vh;
   display: grid;
@@ -11,5 +15,10 @@ body{
   background-color: #444444;
   width:300px;
   height:200px;
+  border-radius: 10px;
+}
+.slide-text{
+  background-color: #444444;
+  padding:30px;
   border-radius: 10px;
 }
