@@ -136,3 +136,43 @@ img.work-img{
   transition-property: top,transform;
   transition-delay: 0s;
 }
+
+.half-container {
+	 height: 100%;
+}
+ .half-container:hover .half {
+	 width: 0;
+}
+ .half-container .half {
+	 width: 50%;
+	 height: 100%;
+	 float: left;
+	 position: relative;
+	 overflow: hidden;
+	 transition: all 0.3s ease-in-out;
+}
+ .half-container .half h3 {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+}
+ .half-container .half:before, .half-container .half:after {
+	 content: " ";
+	/* 1 */
+	 display: table;
+	/* 2 */
+}
+ .half-container .half:after {
+	 clear: both;
+}
+ .half-container .half:first-child {
+	 background: #f8bdb5;
+}
+ .half-container .half:nth-child(2) {
+	 background: #cbe6c8;
+}
+ .half-container .half:hover {
+	 width: 100%;
+	 z-index: 50;
+}
