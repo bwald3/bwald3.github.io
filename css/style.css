@@ -138,7 +138,7 @@ img.work-img{
 }
 
 
-.transition-fade{
+/* .transition-fade{
   opacity:1;
   transition: 0.25s;
 }
@@ -147,10 +147,10 @@ html.is-animating .transition-fade{
 }
 html.is-leaving .transition-fade{
   opacity:0;
-}
+} */
 
 .transition-scale-up{
-  transition: opacity 250ms, transform 250ms;
+  transition: opacity 1s, transform 1s;
 }
 html.is-animating .tansition-scale-up{
   transform: translateY(2rem);
