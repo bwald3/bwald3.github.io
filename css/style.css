@@ -164,10 +164,12 @@ html.is-leaving .transition-fade{
 html.is-animating .tansition-scale-up, html.is-animating .main-transition{
   transform: translateY(3rem);
   opacity: 0;
+  transition-delay: 1s;
 }
 html.is-leaving .transition-scale-up html.is-animating .main-transition{
   transform: translateY(3rem);
   opacity: 0;
+  transition-delay: 1s;
 }
 
 html.is-animating.is-leaving .project-content {
