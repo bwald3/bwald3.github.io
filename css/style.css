@@ -162,20 +162,20 @@ html.is-leaving .transition-fade{
   box-shadow: 0px 2px 10px #111;
 }
 html.is-animating .tansition-scale-up, html.is-animating .main-transition{
-  transform: translateY(2rem);
+  transform: translateY(3rem);
   opacity: 0;
 }
 html.is-leaving .transition-scale-up html.is-animating .main-transition{
-  transform: translateY(2rem);
+  transform: translateY(3rem);
   opacity: 0;
 }
 
 html.is-animating.is-leaving .project-content {
-  transform: translateY(3rem);
+  transform: translateY(10rem);
   opacity:0;
 }
 
 html.is-animating.is-rendering .project-content {
-  transform: translateY(3rem);
+  transform: translateY(10rem);
   opacity:0;
 }
