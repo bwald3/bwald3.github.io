@@ -150,14 +150,21 @@ html.is-leaving .transition-fade{
 }
 
 .transition-scale-up{
-  opacity:1;
-  transition: 0.5s;
+  transition: opacity 250ms, transform 250ms;
 }
 html.is-animating .tansition-scale-up{
-  width:100%;
-  height:100%;
-  position: absolute;
+  transform: translateY(2rem);
+  opacity: 0;
 }
 html.is-leaving .transition-scale-up{
-  opacity:0;
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+html.is-animating.is-leaving .detail__content {
+  transform: translateY(3rem);
+}
+
+html.is-animating.is-rendering .detail__content {
+  transform: translateY(3rem);
 }
