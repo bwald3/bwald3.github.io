@@ -154,7 +154,7 @@ html.is-leaving .transition-fade{
 }
 .project-content{
   width:100%;
-  background: #5d5d5d;
+  background: #222222;
   border-radius: 10px 10px 0px 0px;
   opacity: 1;
   min-height: 100vh;
