@@ -154,9 +154,12 @@ html.is-leaving .transition-fade{
 }
 .project-content{
   width:100%;
-  background: #d5d5d5;
+  background: #5d5d5d;
+  border-radius: 10px 10px 0px 0px;
   opacity: 1;
+  min-height: 100vh;
   transition: opacity 1s, transform 1s;
+  box-shadow: 0px 2px 10px #111;
 }
 html.is-animating .tansition-scale-up, html.is-animating .main-transition{
   transform: translateY(2rem);
