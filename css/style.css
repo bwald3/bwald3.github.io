@@ -142,9 +142,9 @@ img.work-img{
   opacity:1;
   transition: 0.25s;
 }
-.html.is-animating .transition-fade{
+html.is-animating .transition-fade{
   opacity:0;
 }
-.html.is-leaving .transition-fade{
+html.is-leaving .transition-fade{
   opacity:0;
 }
