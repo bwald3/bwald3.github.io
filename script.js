@@ -3,3 +3,5 @@
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
   });
+
+  const swup = new Swup();
