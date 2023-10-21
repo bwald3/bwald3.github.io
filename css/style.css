@@ -149,14 +149,14 @@ html.is-leaving .transition-fade{
   opacity:0;
 } */
 
-.transition-scale-up, main{
+.transition-scale-up, .main-transition{
   transition: opacity 1s, transform 1s;
 }
-html.is-animating .tansition-scale-up, html.is-animating main{
+html.is-animating .tansition-scale-up, html.is-animating .main-transition{
   transform: translateY(2rem);
   opacity: 0;
 }
-html.is-leaving .transition-scale-up html.is-animating main{
+html.is-leaving .transition-scale-up html.is-animating .main-transition{
   transform: translateY(2rem);
   opacity: 0;
 }
