@@ -173,6 +173,6 @@ html.is-animating.is-leaving .project-content {
 }
 
 html.is-animating.is-rendering .project-content {
-  transform: translateY(-3rem);
+  transform: translateY(3rem);
   opacity:0;
 }
