@@ -16,9 +16,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 50%;
-  width: 200px;
-  height: 200px;
+  left: -150px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 1px solid #ec7700;
   padding: 20px;
@@ -30,194 +30,18 @@ body {
      object-fit: cover;
   border-radius: 50%;
 }
-nav {
-  z-index: 10000;
+.hero-section .hero-container {
+  margin-left: 150px;
 }
 
-.navbar {
-  background-color: rgba(34, 34, 34, 0.98);
-  box-shadow: 0px 2px 10px #111;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-a.nav-link {
-  color: #bbb;
-}
-
-a.nav-link:hover {
-  color: #ec7700;
-  transition: all 0.2s;
-}
-
-.bw-full-width {
-  width: 80%;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  border-left: 1px solid #ec7700;
-  border-right: 1px solid #ec7700;
-}
-
-.scroll-section {
+.section-grid {
   height: 100vh;
+}
+.section-grid .grid-two-one {
   display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-
-.hero-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-}
-
-.hero-container .moving-container {
-  background-color: #444444;
-  width: 40%;
-  min-height: 600px;
-  height: 80vh;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-container .moving-container img {
-  max-width: 80%;
-}
-
-.hero-container .hero-text {
-  width: 60%;
-  min-height: 600px;
-  height: 80vh;
-}
-
-.hero-container .hero-text .hero-description {
-  display: flex;
-  flex-direction: row;
-}
-
-.slide-text {
-  background-color: #444444;
-  padding: 30px;
-  border-radius: 10px;
-}
-
-img.work-img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-#checkbox {
-  display: none;
-}
-
-.navbar-toggler {
-  position: relative;
-  width: 40px;
-  cursor: pointer;
-  margin: auto;
-  display: block;
-  height: 34px;
-}
-
-.bar {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 4px;
-  border-radius: 2px;
-  background: #ec7700;
-  color: inherit;
-  opacity: 1;
-  transition: none 0.35s cubic-bezier(0.5, -0.35, 0.35, 1.5) 0s;
-}
-
-/***** Collapse Animation *****/
-.navbar-toggler:not(.collapsed) .bar--top {
-  bottom: calc(50% - 11px - 4px);
-  margin-bottom: 13px;
-  transform: rotate(45deg);
-  transition-property: bottom, margin, transform;
-  transition-delay: 0.105s, 0.455s, 0.455s;
-}
-
-.navbar-toggler:not(.collapsed) .bar--middle {
-  top: calc(50% + 11px);
-  opacity: 0;
-  transition-duration: 0.35s, 0s;
-  transition-property: top, opacity;
-  transition-delay: 0s, 0.35s;
-}
-
-.navbar-toggler:not(.collapsed) .bar--bottom {
-  top: calc(50% - 2px);
-  transform: rotate(-45deg);
-  transition-property: top, transform;
-  transition-delay: 0.455s, 0.455s;
-}
-
-.navbar-toggler.collapsed .bar--top {
-  bottom: calc(50% + 11px + 2px);
-  transition-property: bottom, margin, transform;
-  transition-delay: 0.35s, 0s, 0s;
-}
-
-.navbar-toggler.collapsed .bar--middle {
-  top: calc(50% - 2px);
-  transition-property: top, opacity;
-  transition-duration: 0.35s, 0s;
-  color: #444;
-  transition-delay: 0.455s, 0.455s;
-}
-
-.navbar-toggler.collapsed .bar--bottom {
-  top: calc(50% + 11px + 2px);
-  transition-property: top, transform;
-  transition-delay: 0s;
-}
-
-/* .transition-fade{
-  opacity:1;
-  transition: 0.25s;
-}
-html.is-animating .transition-fade{
-  opacity:0;
-}
-html.is-leaving .transition-fade{
-  opacity:0;
-} */
-.transition-scale-up, .main-transition {
-  transition: opacity 1s, transform 1s;
-}
-
-.project-content {
-  width: 100%;
-  background: #222222;
-  border-radius: 10px 10px 0px 0px;
-  opacity: 1;
-  min-height: 100vh;
-  transition: opacity 1s, transform 1s;
-  box-shadow: 0px 2px 10px #111;
-}
-
-html.is-animating .tansition-scale-up, html.is-animating .main-transition {
-  transform: translateY(3rem);
-  opacity: 0;
-}
-
-html.is-leaving .transition-scale-up html.is-animating .main-transition {
-  transform: translateY(3rem);
-  opacity: 0;
-}
-
-html.is-animating.is-leaving .project-content {
-  transform: translateY(10rem);
-  opacity: 0;
-}
-
-html.is-animating.is-rendering .project-content {
-  transform: translateY(10rem);
-  opacity: 0;
+.section-grid .grid-one-one {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }/*# sourceMappingURL=styles.css.map */
