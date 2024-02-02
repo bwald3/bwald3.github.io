@@ -4,6 +4,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.bw-full-width {
+  width: 80%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid #ec7700;
+  border-right: 1px solid #ec7700;
+}
+
 .hero-section {
   height: 100vh;
   position: relative;
