@@ -24,6 +24,8 @@ a.nav-link:hover{
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  border-left: 1px solid #ec7700;
+  border-right: 1px solid #ec7700;
 }
 .scroll-section {
   height: 100vh;
@@ -164,12 +166,10 @@ html.is-leaving .transition-fade{
 html.is-animating .tansition-scale-up, html.is-animating .main-transition{
   transform: translateY(3rem);
   opacity: 0;
-  transition-delay: 1s;
 }
 html.is-leaving .transition-scale-up html.is-animating .main-transition{
   transform: translateY(3rem);
   opacity: 0;
-  transition-delay: 1s;
 }
 
 html.is-animating.is-leaving .project-content {
