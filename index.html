@@ -13,15 +13,24 @@
     <link rel="stylesheet" href="/css/locomotive-scroll.css" />
     <script src="locomotive-scroll.min.js"></script>
     <script>
-        (function () {
-            var scroll = new LocomotiveScroll();
-        })();
+        import LocomotiveScroll from 'locomotive-scroll';
+
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            smooth: true
+        });
     </script>
 
   </head>
   <body>
     <div class="bw-full-width">
       <div data-scroll-container>
+          <div class="hero-section" data-scroll-section>
+            <div class="hero-img" data-scroll data-scroll-direction="veritcal" data-scroll-speed="1"><img src="/img/burkeselfuiux.jpg" alt="burkes portrait" ></div>
+            <h1>Hello I'm Burke a<br><span class="changing-titles"></span></h1>
+          </div>
+        </div>
+        <div data-scroll-container>
           <div class="hero-section" data-scroll-section>
             <div class="hero-img" data-scroll data-scroll-direction="veritcal" data-scroll-speed="1"><img src="/img/burkeselfuiux.jpg" alt="burkes portrait" ></div>
             <h1>Hello I'm Burke a<br><span class="changing-titles"></span></h1>
