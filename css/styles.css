@@ -13,6 +13,15 @@ body {
   border-right: 1px solid #ec7700;
 }
 
+.container-card {
+  border-radius: 15px;
+  background-color: #414141;
+  padding: 20px;
+}
+.container-card.orange {
+  background-color: #FFC79D;
+}
+
 .hero-section {
   height: 100vh;
   position: relative;
