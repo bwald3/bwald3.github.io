@@ -12,7 +12,19 @@
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/locomotive-scroll.css" />
     <script src="locomotive-scroll.min.js"></script>
-
+    <script>
+      const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".smooth-scroll"),
+    smooth: true,
+    smoothMobile: true,
+    mobile: {
+       smooth: true
+   },
+   tablet: {
+       smooth: true
+   }
+  });
+</script>
   </head>
   <body>
     <div class="bw-full-width" data-scroll-container>
@@ -30,11 +42,11 @@
         </div>
       </nav>
       <div>
-          <div class="hero-section">
+          <section class="hero-section">
             <div class="hero-img" data-scroll data-scroll-direction="veritcal" data-scroll-speed="5"><img src="/img/burkeselfuiux.jpg" alt="burkes portrait" ></div>
             <h1>Hello I'm Burke a<br><span class="changing-titles"></span></h1>
-          </div>
-          <div class="section-grid">
+          </section>
+          <section class="section-grid">
             <div class="grid-two-one">
               <div class="container-card">
                 UI/UX Design & Development
@@ -51,22 +63,23 @@
                 Blaj
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+          <section>
+            <h2>Recent Projects</h2>
+          </section>
+          <section>
+            <h2>Companies</h2>
+            <div class="company-grid">
+              <div class="container-card company-logos">LOGO</div>
+              <div class="container-card company-logos">LOGO</div>
+              <div class="container-card company-logos">LOGO</div>
+              <div class="container-card company-logos">LOGO</div>
+              <div class="container-card company-logos">LOGO</div>
+              <div class="container-card company-logos">LOGO</div>
+            </div>
+          </section>
+      </div>
     </div>  
-    <script>
-      const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".smooth-scroll"),
-    smooth: true,
-    smoothMobile: true,
-    mobile: {
-       smooth: true
-   },
-   tablet: {
-       smooth: true
-   }
-  });
-</script>
     <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
