@@ -50,30 +50,54 @@ body{
   
 .hero-section{
   height:100vh;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
   .section-background{
     margin-top:150px;
     border-radius: 12px;
     background-color: $mdblack;
     box-shadow: $box-shadow;
-    padding:30px;
+    padding:0px;
     position: relative;
+    height:100%;
   }
   .mock-screen{
-    position: absolute;
+    position: relative;
     top:0px;
     left:0px;
     width: 100%;
-    background-color: red;
+    height:20px;
     z-index: 2;
-    .dot{
-      background-color: #FFC79D;
-      width:5px;
-      height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .dot-group{
+      position: absolute;
+      display: flex;
+      left:5px;
+      .dot{
+        background-color: $mdlghtblack;
+        width:8px;
+        height: 8px;
+        display: flex;
+        border-radius: 50%;
+        margin-left:4px;
+      }
     }
+    .search{
+      height:12px;
+      width:50%;
+      background-color: $mdlghtblack;
+      border-radius: 4px;
+    }
+
+  }
+  .hero-content{
+    padding:30px;
   }
 }
 .spotlight-section{

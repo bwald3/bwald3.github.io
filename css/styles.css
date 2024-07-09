@@ -49,31 +49,54 @@ section {
 
 .hero-section {
   height: 100vh;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 80px;
 }
 .hero-section .section-background {
   margin-top: 150px;
   border-radius: 12px;
   background-color: #222222;
   box-shadow: 0px 10px 40px rgb(0, 0, 0);
-  padding: 30px;
+  padding: 0px;
   position: relative;
+  height: 100%;
 }
 .hero-section .mock-screen {
-  position: absolute;
+  position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: red;
+  height: 20px;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero-section .mock-screen .dot {
-  background-color: #FFC79D;
-  width: 5px;
-  height: 5px;
+.hero-section .mock-screen .dot-group {
+  position: absolute;
+  display: flex;
+  left: 5px;
+}
+.hero-section .mock-screen .dot-group .dot {
+  background-color: #323232;
+  width: 8px;
+  height: 8px;
+  display: flex;
+  border-radius: 50%;
+  margin-left: 4px;
+}
+.hero-section .mock-screen .search {
+  height: 12px;
+  width: 50%;
+  background-color: #323232;
+  border-radius: 4px;
+}
+.hero-section .hero-content {
+  padding: 30px;
 }
 
 .spotlight-section .section-background {
