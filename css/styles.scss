@@ -44,13 +44,18 @@ body{
     position: fixed;
     top:0px;
     width:100%;
+    padding:10px;
     z-index: 999999;
-    max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: $drkblack;
+    .nav-bar-inner{
+      max-width: 1440px;
+      width:80%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     .nav-logo{
       max-width: 80px;
       width:100%;
