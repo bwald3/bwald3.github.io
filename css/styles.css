@@ -177,6 +177,18 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.spotlight .grid-section .grid-card.ow-blue {
+  background-color: #0072ff;
+}
+.spotlight .grid-section .grid-card.wa-blue {
+  background-color: #00559B;
+}
+.spotlight .grid-section .grid-card.fg-orange {
+  background-color: #F26722;
+}
+.spotlight .grid-section .grid-card.wa--grey {
+  background-color: #eee;
+}
 .spotlight .section-background {
   border-radius: 12px;
   background-color: #222222;
