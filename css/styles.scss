@@ -4,6 +4,7 @@ $mdlghtblack: #323232;
 $lgtblack:#424242;
 $orange: #FFC79D;
 $box-shadow: 0px 10px 40px rgba(0,0,0.15);
+$br: 12px;
 
 body{
     background-color: $drkblack;
@@ -44,7 +45,6 @@ body{
     top:0px;
     width:100%;
     z-index: 999999;
-    width: 80%;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
@@ -73,8 +73,8 @@ body{
   .section-background{
     // margin-top:150px;
     border-radius: 12px;
-    background-color: $mdblack;
     box-shadow: $box-shadow;
+    border:1px solid #828282;
     padding:10px;
     position: relative;
     height:100%;
@@ -157,9 +157,30 @@ body{
     object-fit: cover;
   }
 }
-.spotlight-section{
+.spotlight{
+  .grid-section{
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1fr;
+    .grid-1{
+      grid-column: 1 / span 3;
+    }
+    .grid-2{
+      grid-column: span 1;
+    }
+    .grid-card{
+      background-color: $lgtblack;
+      border-radius: $br;
+      height:100%;
+      min-height: 300px;
+      .card-heading{
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
   .section-background{
-    margin-top:50px;
     border-radius: 12px;
     background-color: $mdblack;
     box-shadow: $box-shadow;
