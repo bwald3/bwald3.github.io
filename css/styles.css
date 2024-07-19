@@ -189,6 +189,21 @@ section {
 .spotlight .grid-section .grid-card.wa-green {
   background-color: #367C36;
 }
+.spotlight .grid-section .grid-card .material-symbols-outlined {
+  transition: all 0.5s;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spotlight .grid-section .grid-card:hover .material-symbols-outlined {
+  transform: translatex(10px);
+}
 .spotlight .section-background {
   border-radius: 12px;
   background-color: #222222;
