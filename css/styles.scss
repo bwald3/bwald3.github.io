@@ -171,17 +171,24 @@ body{
       grid-column: 1 / span 3;
     }
     .grid-2{
-      grid-column: span 1;
+      grid-column: 1 / span3;
     }
     .grid-card{
       background-color: $lgtblack;
       border-radius: $br;
       height:100%;
       min-height: 300px;
+      overflow: hidden;
       .card-heading{
         padding:20px;
         display: flex;
         justify-content: space-between;
+      }
+      .card-spotlight-img{
+        width:100%;
+        max-height: 200px;
+        object-fit: cover;
+        object-position: top;
       }
       &.ow-blue{
         background-color: #0072ff;
@@ -231,6 +238,13 @@ body{
     }
   }
 }
-footer{
-  
+@media (min-width: 767px) {
+  .grid-section{
+    .grid-1{
+      grid-column: 1 / span 3 !important;
+    }
+    .grid-2{
+      grid-column: span 1 !important;
+    }
+  }
 }
