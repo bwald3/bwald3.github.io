@@ -260,6 +260,15 @@ small,
     }
   }
 }
+.img-container{
+  width:100%;
+  overflow: hidden;
+  border-radius: 8px;  
+  .img{
+    object-fit: cover;
+    width:100%;
+  }
+}
 .wa-green{
   background-color: #367C36;
 }

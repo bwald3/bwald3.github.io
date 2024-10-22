@@ -266,6 +266,17 @@ section {
   background-color: red;
 }
 
+.img-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.img-container .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 .wa-green {
   background-color: #367C36;
 }
