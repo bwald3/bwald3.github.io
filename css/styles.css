@@ -266,6 +266,10 @@ section {
   background-color: red;
 }
 
+.wa-green {
+  background-color: #367C36;
+}
+
 @media (min-width: 767px) {
   .grid-section .grid-1 {
     grid-column: 1/span 3 !important;
