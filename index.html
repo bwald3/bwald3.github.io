@@ -125,9 +125,10 @@
       // Get reference to the div to scale
       const scaleDiv = document.querySelector('.scroll-scale');
 
-      // Add scroll listener
-      scroll.on('scroll', (obj) => {
-        const { top, height } = scaleDiv.getBoundingClientRect(); // Get div position and height
+      /// Add scroll listener to the scroller
+      scroller.on('scroll', (obj) => {
+        // Get div position and height
+        const { top, height } = scaleDiv.getBoundingClientRect(); 
         const viewportHeight = window.innerHeight; // Get viewport height
 
         // Calculate the scroll progress of the element (between 0 and 1)
