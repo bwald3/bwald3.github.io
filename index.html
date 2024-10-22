@@ -30,14 +30,13 @@
         </div>
       </div>
   </nav>
-    <div class="bw-full-width" data-scroll-container>
-      <section id="mainHero" data-scroll-section>
-        <div class="hero-section" data-scroll data-scroll-sticky data-scroll-target="#mainHero">
-          <h1>Hi, I'm Burke</h1>
-          <p>I design & develop Interfaces, 
-            Products and Digital Experiences.</p>
-        </div>
-        <div class="grow-container" data-scroll data-scroll-speed="1.5">
+      <section id="mainHero">
+        <div class="hero-section">
+          <div class="section-inner">
+            <h1 class="text-center">Hi, I'm Burke</h1>
+            <p class="text-center">I design & develop Interfaces, 
+              Products and Digital Experiences.</p>
+          </div>
         </div>
       </section>
       <section data-scroll-section>
@@ -118,7 +117,6 @@
           </div>   
         </div>
       </section>
-    </div>  
     <script>
       const scroller = new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
