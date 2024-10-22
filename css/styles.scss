@@ -131,10 +131,9 @@ small,
   }
 
   .scroll-scale {
-    transition: transform 0.05s ease-out; /* Smooth scaling */
     transform: scale(1); /* Initial scale */
   }
-  
+
   .hero-content{
     padding:0px;
   }

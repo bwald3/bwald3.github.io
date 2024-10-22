@@ -140,7 +140,6 @@ section {
   background-color: #121212;
 }
 .hero-section .scroll-scale {
-  transition: transform 0.05s ease-out; /* Smooth scaling */
   transform: scale(1); /* Initial scale */
 }
 .hero-section .hero-content {

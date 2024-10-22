@@ -122,27 +122,30 @@
         el: document.querySelector('[data-scroll-container]'),
         smooth: true
       });
-      // Get reference to the div to scale
-      const scaleDiv = document.querySelector('.scroll-scale');
+       // Get reference to the div to scale
+  const scaleDiv = document.querySelector('.scroll-scale');
 
-      /// Add scroll listener to the scroller
-      scroller.on('scroll', (obj) => {
-        // Get div position and height
-        const { top, height } = scaleDiv.getBoundingClientRect(); 
-        const viewportHeight = window.innerHeight; // Get viewport height
+// Add scroll listener to the scroller
+scroller.on('scroll', (obj) => {
+  // Get the element's position relative to the viewport
+  const { top, height } = scaleDiv.getBoundingClientRect();
+  const viewportHeight = window.innerHeight;
 
-        // Calculate the scroll progress of the element (between 0 and 1)
-        let progress = (viewportHeight - top) / (viewportHeight + height);
+  // Start scaling when the element is within the viewport
+  if (top < viewportHeight && top > -height) {
+    // Calculate the scroll progress as the element moves through the viewport
+    let progress = (viewportHeight - top) / viewportHeight;
 
-        // Constrain progress between 0 and 1
-        progress = Math.min(Math.max(progress, 0), 1);
+    // Constrain progress between 0 and 1 (0 = not visible, 1 = fully scrolled through)
+    progress = Math.min(Math.max(progress, 0), 1);
 
-        // Calculate the scale based on progress (from scale 1 to 1.1)
-        const scale = 1 + progress * 0.1;
+    // Calculate the scale based on progress (from scale 1 to 1.1)
+    const scale = 1 + progress * 0.1;
 
-        // Apply the calculated scale to the element
-        scaleDiv.style.transform = `scale(${scale})`;
-      });
+    // Apply the calculated scale to the element
+    scaleDiv.style.transform = `scale(${scale})`;
+  }
+});
     </script>
     <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
