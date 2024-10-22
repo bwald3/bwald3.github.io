@@ -139,6 +139,10 @@ section {
   height: 100%;
   background-color: #121212;
 }
+.hero-section .scroll-scale {
+  transition: transform 0.05s ease-out; /* Smooth scaling */
+  transform: scale(1); /* Initial scale */
+}
 .hero-section .hero-content {
   padding: 0px;
 }
