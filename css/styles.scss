@@ -182,7 +182,6 @@ small,
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
   background-color: $drkblack;
   transition: background-color 0.3s ease;
   .section-inner{
@@ -196,9 +195,18 @@ small,
     background-color: $drkblack;
   }
   &:hover{
+    &.ow-blue{
+      background-color: #0072ff;
+    }
+    &.wa-blue{
+      background-color: #00559B;
+    }
+    &.fg-orange{
+      background-color: #F26722;
+    }
     &.wa-green{
       background-color: #367C36;
-    } 
+    }
   }
 }
 .grow-container{

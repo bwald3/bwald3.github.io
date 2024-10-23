@@ -186,7 +186,6 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
   background-color: #121212;
   transition: background-color 0.3s ease;
 }
@@ -199,6 +198,15 @@ section {
   padding: 30px;
   height: 100%;
   background-color: #121212;
+}
+.spotlight-section:hover.ow-blue {
+  background-color: #0072ff;
+}
+.spotlight-section:hover.wa-blue {
+  background-color: #00559B;
+}
+.spotlight-section:hover.fg-orange {
+  background-color: #F26722;
 }
 .spotlight-section:hover.wa-green {
   background-color: #367C36;
