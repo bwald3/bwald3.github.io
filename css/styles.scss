@@ -5,6 +5,7 @@ $lgtblack:#424242;
 $orange: #FFC79D;
 $box-shadow: 0px 10px 40px rgba(0,0,0.15);
 $br: 17px;
+$brinner: 7px;
 
 
 html {font-size: 18px;}
@@ -120,6 +121,7 @@ small,
   flex-direction: column;
   margin-bottom: 80px;
   background-color: #f2f2f2;
+  overflow: hidden;
   .section-inner{
     border-radius: $br;
     display: flex;
@@ -128,7 +130,8 @@ small,
     margin:20px;
     padding:30px;
     height:100%;
-    background-color: $drkblack;    
+    background-color: $drkblack;  
+    box-shadow:  0px 0px 30px inset rgba(255, 255, 255, 0.25);  
   }
 
   .scroll-scale {
@@ -172,6 +175,32 @@ small,
     object-fit: cover;
   }
 }
+.spotlight-section{
+  height:100vh;
+  min-height: 400px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  background-color: $drkblack;
+  transition: all 0.3s ease;
+  .section-inner{
+    border-radius: $br;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:20px;
+    padding:30px;
+    height:100%;
+    background-color: $drkblack;
+  }
+  &:hover{
+    &.wa-green{
+      background-color: #367C36;
+    } 
+  }
+}
 .grow-container{
   width: 100%;
   overflow: hidden;
@@ -199,18 +228,23 @@ small,
       background-color: $lgtblack;
       border-radius: $br;
       height:100%;
-      min-height: 300px;
+      max-height: 500px;
+      padding:10px;
       overflow: hidden;
+      position: relative;
+      transition: 0.3s ease;
       .card-heading{
-        padding:20px;
-        display: flex;
+        display: flex;    
         justify-content: space-between;
       }
       .card-spotlight-img{
         width:100%;
-        max-height: 200px;
+        height:100%;
         object-fit: cover;
         object-position: top;
+        transform: scale(1);
+        border-radius: $brinner;
+        transition: all 0.3s ease;
       }
       &.ow-blue{
         background-color: #0072ff;
@@ -240,6 +274,10 @@ small,
         .material-symbols-outlined{
           transform: translatex(10px);
         }
+        .card-spotlight-img{
+          transform: scale(1.05);
+          border-radius: $br;
+        }
       }
     }
   }
@@ -268,9 +306,6 @@ small,
     object-fit: cover;
     width:100%;
   }
-}
-.wa-green{
-  background-color: #367C36;
 }
 @media (min-width: 767px) {
   .grid-section{
