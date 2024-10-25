@@ -240,59 +240,59 @@ small,
     flex-direction: column;
     justify-content: center;
     margin:20px;
-    // padding:30px;
+    padding:30px;
     height:100%;
     overflow: hidden;
-    background-color: $drkblack;
-    .spotlight-img{
-      object-fit: cover;
-      height: 100%;
-    }
-    .spotlight-description{
-      border-radius: 0px 17px 0px 0px;
-      background-color: $drkblack;
-      position: absolute;
-      left:10px;
-      bottom:10px;
-      max-width: 400px;
-      padding: 10px;
-      &::before{
-        content: "";
-        position: absolute;
-        width: 50px;
-        top: -50px;
-        height: 50px;
-        border-radius: 0px 0px 0px 17px;
-        background-color: transparent;
-        box-shadow: -10px 10px 0px $drkblack;
-      }
-      &::after{
-        content: "";
-        position: absolute;
-        width: 50px;
-        bottom: 10px;
-        right:-50px;
-        height: 50px;
-        border-radius: 0px 0px 0px 17px;
-        background-color: transparent;
-        box-shadow: -10px 10px 0px $drkblack;
-      }
-    }
+    background-color: $mdblack;
+    // .spotlight-img{
+    //   object-fit: cover;
+    //   height: 100%;
+    // }
+    // .spotlight-description{
+    //   border-radius: 0px 17px 0px 0px;
+    //   background-color: $drkblack;
+    //   position: absolute;
+    //   left:10px;
+    //   bottom:10px;
+    //   max-width: 400px;
+    //   padding: 10px;
+    //   &::before{
+    //     content: "";
+    //     position: absolute;
+    //     width: 50px;
+    //     top: -50px;
+    //     height: 50px;
+    //     border-radius: 0px 0px 0px 17px;
+    //     background-color: transparent;
+    //     box-shadow: -10px 10px 0px $drkblack;
+    //   }
+    //   &::after{
+    //     content: "";
+    //     position: absolute;
+    //     width: 50px;
+    //     bottom: 10px;
+    //     right:-50px;
+    //     height: 50px;
+    //     border-radius: 0px 0px 0px 17px;
+    //     background-color: transparent;
+    //     box-shadow: -10px 10px 0px $drkblack;
+    //   }
+    // }
   }
-  &:hover{
-    &.ow-blue{
-      background-color: #0072ff;
-    }
-    &.wa-blue{
-      background-color: #00559B;
-    }
-    &.fg-orange{
-      background-color: #F26722;
-    }
-    &.wa-green{
-      background-color: #367C36;
-    }
-  }
+  // &:hover{
+  //   &.ow-blue{
+  //     background-color: #0072ff;
+  //   }
+  //   &.wa-blue{
+  //     background-color: #00559B;
+  //   }
+  //   &.fg-orange{
+  //     background-color: #F26722;
+  //   }
+  //   &.wa-green{
+  //     background-color: #367C36;
+  //   }
+  // }
 }
 .grow-container{
   width: 100%;

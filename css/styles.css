@@ -243,56 +243,10 @@ section {
   flex-direction: column;
   justify-content: center;
   margin: 20px;
+  padding: 30px;
   height: 100%;
   overflow: hidden;
-  background-color: #121212;
-}
-.spotlight-section .section-inner .spotlight-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-}
-.spotlight-section .section-inner .spotlight-description {
-  border-radius: 0px 17px 0px 0px;
-  background-color: #121212;
-  position: absolute;
-  left: 10px;
-  bottom: 10px;
-  max-width: 400px;
-  padding: 10px;
-}
-.spotlight-section .section-inner .spotlight-description::before {
-  content: "";
-  position: absolute;
-  width: 50px;
-  top: -50px;
-  height: 50px;
-  border-radius: 0px 0px 0px 17px;
-  background-color: transparent;
-  box-shadow: -10px 10px 0px #121212;
-}
-.spotlight-section .section-inner .spotlight-description::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  bottom: 10px;
-  right: -50px;
-  height: 50px;
-  border-radius: 0px 0px 0px 17px;
-  background-color: transparent;
-  box-shadow: -10px 10px 0px #121212;
-}
-.spotlight-section:hover.ow-blue {
-  background-color: #0072ff;
-}
-.spotlight-section:hover.wa-blue {
-  background-color: #00559B;
-}
-.spotlight-section:hover.fg-orange {
-  background-color: #F26722;
-}
-.spotlight-section:hover.wa-green {
-  background-color: #367C36;
+  background-color: #222222;
 }
 
 .grow-container {
