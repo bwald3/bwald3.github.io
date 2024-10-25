@@ -3,6 +3,7 @@ $mdblack: #222222;
 $mdlghtblack: #323232;
 $lgtblack:#424242;
 $orange: #FFC79D;
+$white: #f2f2f2;
 $box-shadow: 0px 10px 40px rgba(0,0,0.15);
 $br: 17px;
 $brinner: 7px;
@@ -60,7 +61,51 @@ small,
   font-size: 0.56rem;
   font-weight: 300;
 }
-  section{
+
+.nav-btn{
+  background-color: transparent;
+  color:$white;
+  border-radius: 12px;
+  padding: 12px 36px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  gap:12px;
+  transition: all 0.6s ease;
+  &:hover{
+    background-color: rgba(255,255,255, 0.1);
+    color:$white;
+  }
+}
+
+.bw-icon-btn{
+  background-color: #F26722;
+  border-radius: 12px;
+  padding: 12px 36px;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  gap:12px;
+  transition: all 0.6s ease;
+  cursor: pointer;
+  .btn-icon{
+    width:30px;
+    height:30px;
+    background-color: rgba(0,0,0, 0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+  }
+  &:hover{
+    .btn-icon{
+      transform: translatex(6px);
+    }
+  }
+}
+  section{ 
     min-height: 100vh;
   }
   .bw-full-width {
@@ -91,7 +136,8 @@ small,
   }
   .nav-bar{
     position: fixed;
-    top:0px;
+    top:unset;
+    bottom:20px;
     width:100%;
     margin-top:40px;
     padding:10px;
@@ -99,19 +145,22 @@ small,
     // background-color: $drkblack;
     .nav-bar-inner{
       max-width: 1440px;
-      width:80%;
+      width:90%;
       margin-left: auto;
       margin-right: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background-color: $mdblack;
+      box-shadow: $box-shadow;  
+      border-radius: $br;
     }
     .nav-logo{
+      display: none;
       max-width: 80px;
       width:100%;
     }
   }
-  
 .hero-section{
   height:100vh;
   min-height: 400px;
@@ -322,6 +371,28 @@ small,
     }
     .grid-2{
       grid-column: span 1 !important;
+    }
+  }
+  .nav-btn{
+    flex-direction: row;
+    font-size: 1rem;
+  }
+  .nav-bar{
+    position: fixed;
+    top:0px;
+    width:100%;
+    margin-top:40px;
+    padding:10px;
+    .nav-bar-inner{
+      width:80%;
+      background-color: transparent;
+      box-shadow: none;  
+      border-radius: $br;
+    }
+    .nav-logo{
+      display: block;
+      max-width: 80px;
+      width:100%;
     }
   }
 }
