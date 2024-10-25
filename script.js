@@ -35,3 +35,13 @@ if (scrollPosition >= scrollLimit) {
 // scroller.start();
 }
 });
+
+
+window.addEventListener("scroll", function() {
+  const navbar = document.getElementById("navBar");
+  if (window.scrollY > 400) { // Adjust the scroll position as needed
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
