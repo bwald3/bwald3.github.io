@@ -358,6 +358,40 @@ section {
   width: 100%;
 }
 
+.mock-screen {
+  width: 100%;
+  outline: 2px solid #424242;
+  border: 1px solid #323232;
+  outline-offset: 5px;
+  border-radius: 17px;
+  height: 400px;
+  display: flex;
+  padding: 30px 10px 10px 10px;
+  position: relative;
+}
+.mock-screen .mock-dots {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+}
+.mock-screen .mock-dots .dot {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #424242;
+}
+.mock-screen .screen-inner {
+  border-radius: 17px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.mock-screen .screen-inner img {
+  width: 100%;
+}
+
 @media (min-width: 767px) {
   .grid-section .grid-1 {
     grid-column: 1/span 3 !important;

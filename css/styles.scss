@@ -400,6 +400,41 @@ small,
     width:100%;
   }
 }
+.mock-screen{
+  width: 100%;
+  // background: rgb(50,50,50);
+  // background: linear-gradient(180deg, rgba(50,50,50,1) 0%, rgba(50,50,50,0.8) 66%, rgba(50,50,50,0) 100%);
+  outline: 2px solid $lgtblack;
+  border: 1px solid $mdlghtblack;
+  outline-offset: 5px;
+  border-radius: $br;
+  height:400px;
+  display: flex;
+  padding:30px 10px 10px 10px;
+  position: relative;
+  .mock-dots{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:10px;
+    .dot{
+      width:10px;
+      height: 10px;
+      margin-right:5px;
+      border-radius: 10px;
+      background-color: $lgtblack;
+    }
+  }
+  .screen-inner{
+    border-radius: $br;
+    overflow: hidden;
+    height: 100%;
+    width:100%;
+    img{
+      width:100%;
+    }
+  }
+}
 @media (min-width: 767px) {
   .grid-section{
     .grid-1{
