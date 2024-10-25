@@ -240,9 +240,33 @@ small,
     flex-direction: column;
     justify-content: center;
     margin:20px;
-    padding:30px;
+    // padding:30px;
     height:100%;
+    overflow: hidden;
     background-color: $drkblack;
+    .spotlight-img{
+      object-fit: cover;
+      height: 100%;
+    }
+    .spotlight-description{
+      border-radius: 0px 17px 0px 0px;
+      background-color: $drkblack;
+      position: absolute;
+      left:10px;
+      bottom:10px;
+      max-width: 400px;
+      padding: 10px;
+      &::after{
+        content: "";
+          position:absolute;
+          width:50px;
+          top:-50px;
+          height:50px;
+          border-radius: 17px; /* NEW */
+          background-color: transparent;
+          box-shadow: -10px 17px 0px black;
+      }
+    }
   }
   &:hover{
     &.ow-blue{
