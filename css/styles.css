@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 18px;
 }
@@ -62,6 +63,18 @@ small,
 .text-small {
   font-size: 0.56rem;
   font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+}
+ul > li:before {
+  display: inline-block;
+  content: "–";
+  width: 1em;
+  margin-left: -1em;
 }
 
 .nav-btn {

@@ -61,7 +61,19 @@ small,
   font-size: 0.56rem;
   font-weight: 300;
 }
-
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  > li{
+    &:before {
+    display: inline-block;
+    content: "–";
+    width: 1em;
+    margin-left: -1em;
+  }
+  }
+}
 .nav-btn{
   background-color: transparent;
   color:$white;
