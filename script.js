@@ -1,3 +1,16 @@
+async function loadFile(id, file) {
+  const element = document.getElementById(id);
+  const response = await fetch(file);
+  if (response.ok) {
+    element.innerHTML = await response.text();
+  } else {
+    console.error(`Error loading ${file}:`, response.statusText);
+  }
+}
+loadFile("navHeader", "/header.html");
+loadFile("footer", "/footer.html");
+
+
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
