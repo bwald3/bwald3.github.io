@@ -253,7 +253,10 @@ ul {
     flex-direction: column;
     justify-content: center;
     margin:0px 20px;
-    padding:30px;
+    width: 80%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
     height:100%;
     overflow: hidden;
     border-left: 1px solid $lghtgray;
@@ -263,7 +266,8 @@ ul {
       border-bottom: 1px solid $lghtgray;
     }
     .section-col{
-      border-left:1px solid $lghtgray
+      border-left:1px solid $lghtgray;
+      padding:30px;
     }
   }
 
