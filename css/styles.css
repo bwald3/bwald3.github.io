@@ -241,6 +241,7 @@ section {
 
 .spotlight-section {
   min-height: 400px;
+  border-top: 1px solid #aaaaaa;
   width: 100%;
   position: relative;
   display: flex;
@@ -249,14 +250,22 @@ section {
   transition: background-color 0.3s ease;
 }
 .spotlight-section .section-inner {
-  border-radius: 17px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
+  margin: 0px 20px;
   padding: 30px;
   height: 100%;
   overflow: hidden;
+  border-left: 1px solid #aaaaaa;
+  border-right: 1px solid #aaaaaa;
+  max-width: 1440px;
+}
+.spotlight-section .section-inner.last-section {
+  border-bottom: 1px solid #aaaaaa;
+}
+.spotlight-section .section-inner .section-col {
+  border-left: 1px solid #aaaaaa;
 }
 
 .grow-container {

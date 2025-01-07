@@ -4,6 +4,7 @@ $mdlghtblack: #323232;
 $lgtblack:#424242;
 $orange: #FFC79D;
 $white: #f2f2f2;
+$lghtgray: #aaaaaa;
 $box-shadow: 0px 10px 40px rgba(0,0,0.15);
 $br: 17px;
 $brinner: 7px;
@@ -240,6 +241,7 @@ ul {
 .spotlight-section{
   // height:100vh;
   min-height: 400px;
+  border-top: 1px solid $lghtgray;
   width: 100%;
   position: relative;
   display: flex;
@@ -247,64 +249,24 @@ ul {
   background-color: $drkblack;
   transition: background-color 0.3s ease;
   .section-inner{
-    border-radius: $br;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:20px;
+    margin:0px 20px;
     padding:30px;
     height:100%;
     overflow: hidden;
-    // background-color: $mdblack;
-    // .spotlight-img{
-    //   object-fit: cover;
-    //   height: 100%;
-    // }
-    // .spotlight-description{
-    //   border-radius: 0px 17px 0px 0px;
-    //   background-color: $drkblack;
-    //   position: absolute;
-    //   left:10px;
-    //   bottom:10px;
-    //   max-width: 400px;
-    //   padding: 10px;
-    //   &::before{
-    //     content: "";
-    //     position: absolute;
-    //     width: 50px;
-    //     top: -50px;
-    //     height: 50px;
-    //     border-radius: 0px 0px 0px 17px;
-    //     background-color: transparent;
-    //     box-shadow: -10px 10px 0px $drkblack;
-    //   }
-    //   &::after{
-    //     content: "";
-    //     position: absolute;
-    //     width: 50px;
-    //     bottom: 10px;
-    //     right:-50px;
-    //     height: 50px;
-    //     border-radius: 0px 0px 0px 17px;
-    //     background-color: transparent;
-    //     box-shadow: -10px 10px 0px $drkblack;
-    //   }
-    // }
+    border-left: 1px solid $lghtgray;
+    border-right: 1px solid $lghtgray;
+    max-width: 1440px;
+    &.last-section{
+      border-bottom: 1px solid $lghtgray;
+    }
+    .section-col{
+      border-left:1px solid $lghtgray
+    }
   }
-  // &:hover{
-  //   &.ow-blue{
-  //     background-color: #0072ff;
-  //   }
-  //   &.wa-blue{
-  //     background-color: #00559B;
-  //   }
-  //   &.fg-orange{
-  //     background-color: #F26722;
-  //   }
-  //   &.wa-green{
-  //     background-color: #367C36;
-  //   }
-  // }
+
 }
 .grow-container{
   width: 100%;
