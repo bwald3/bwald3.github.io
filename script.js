@@ -15,39 +15,35 @@ const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
   });
-// Get reference to the div to scale
-const scaleDiv = document.querySelector('.scroll-scale');
+// Select elements for shrinking and growing
+const scaleDownDiv = document.querySelector('.scroll-scale'); // Shrinks
+const scaleUpDiv = document.querySelector('.scroll-scale-up'); // Grows
 
-// Set up the total scroll height for the section
+// Set up the total scroll height for scaling
 const scrollLimit = window.innerHeight * 0.8; // 80vh for scaling
-const sectionHeight = window.innerHeight; // 100vh for section height
 
 // Add scroll listener to the scroller
 scroller.on('scroll', (obj) => {
-// Get the current scroll position
-const scrollPosition = obj.scroll.y; 
+  // Get the current scroll position
+  const scrollPosition = obj.scroll.y;
 
-// If the scroll position is less than 80vh, scale the element
-if (scrollPosition < scrollLimit) {
-// Calculate the scroll progress for scaling (0 to 1)
-let progress = scrollPosition / scrollLimit;
+  // SHRINK LOGIC: Scale down from 1.1 to 1
+  if (scaleDownDiv && scrollPosition < scrollLimit) {
+    let progress = scrollPosition / scrollLimit;
+    progress = Math.min(Math.max(progress, 0), 1); // Constrain progress between 0 and 1
+    const scale = 1 - progress * 0.1; // Shrink from 1.1 to 1
+    scaleDownDiv.style.transform = `scale(${scale})`;
+  }
 
-// Constrain progress between 0 and 1
-progress = Math.min(Math.max(progress, 0), 1);
-
-// Calculate the scale based on progress (from scale 1 to 1.1)
-const scale = 1 + progress * 0.2;
-
-// Apply the calculated scale to the element
-scaleDiv.style.transform = `scale(${scale})`;
-}
-
-// Check if the user has scrolled past 80vh
-if (scrollPosition >= scrollLimit) {
-// Optional: You can unlock further scrolling here if needed
-// scroller.start();
-}
+  // GROW LOGIC: Scale up from 1 to 1.1
+  if (scaleUpDiv && scrollPosition < scrollLimit) {
+    let progress = scrollPosition / scrollLimit;
+    progress = Math.min(Math.max(progress, 0), 1); // Constrain progress between 0 and 1
+    const scale = 1 + progress * 0.1; // Grow from 1 to 1.1
+    scaleUpDiv.style.transform = `scale(${scale})`;
+  }
 });
+  
 
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("scroll", function() {
