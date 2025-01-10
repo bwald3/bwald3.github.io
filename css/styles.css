@@ -265,6 +265,10 @@ section {
   background-color: #121212;
   transition: background-color 0.3s ease;
 }
+.spotlight-section .mesh-gradient {
+  background-color: hsla(0, 0%, 100%, 0);
+  background-image: radial-gradient(at 55% 36%, hsla(242, 100%, 70%, 0.5) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(22, 100%, 77%, 0.5) 0px, transparent 50%);
+}
 .spotlight-section .section-inner {
   display: flex;
   flex-direction: column;
@@ -404,34 +408,19 @@ section {
 
 .mock-screen {
   width: 100%;
-  outline: 2px solid #424242;
-  border: 1px solid #323232;
-  outline-offset: 5px;
   border-radius: 17px;
   max-height: 400px;
   display: flex;
-  padding: 30px 10px 10px 10px;
-  margin: 10px 0px;
+  padding: 20px;
   position: relative;
-}
-.mock-screen .mock-dots {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  top: 10px;
-}
-.mock-screen .mock-dots .dot {
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-  border-radius: 10px;
-  background-color: #424242;
+  background-color: rgba(242, 242, 242, 0.15);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
 }
 .mock-screen .screen-inner {
   border-radius: 10px;
   overflow: hidden;
   width: 100%;
-  box-shadow: 0px -5px 20px rgba(255, 255, 255, 0.2);
 }
 .mock-screen .screen-inner img {
   width: 100%;
