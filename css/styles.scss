@@ -288,10 +288,6 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
     max-width: 1440px;
     opacity: 0;
     transition: opacity 2.5s;
-
-    &.appear{
-      opacity: 1;
-    }
     .row{
       margin:0px !important
     }
@@ -423,8 +419,6 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
   padding:20px;
   position: relative;
   background-color: rgba(242,242,242, 0.15);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
 
   .screen-inner{
     border-radius: 10px;
@@ -436,6 +430,11 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
     }
   }
 }
+
+.appear{
+  opacity: 1 !important;
+}
+
 @media (min-width: 767px) {
   .grid-section{
     .grid-1{
