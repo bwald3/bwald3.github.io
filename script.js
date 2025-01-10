@@ -31,7 +31,7 @@ scroller.on('scroll', (obj) => {
   if (scaleDownDiv && scrollPosition < scrollLimit) {
     let progress = scrollPosition / scrollLimit;
     progress = Math.min(Math.max(progress, 0), 1); // Constrain progress between 0 and 1
-    const scale = 1 - progress * 0.1; // Shrink from 1.1 to 1
+    const scale = 1 - progress * 0.2; // Shrink from 1.1 to 1
     scaleDownDiv.style.transform = `scale(${scale})`;
   }
 
@@ -39,7 +39,7 @@ scroller.on('scroll', (obj) => {
   if (scaleUpDiv && scrollPosition < scrollLimit) {
     let progress = scrollPosition / scrollLimit;
     progress = Math.min(Math.max(progress, 0), 1); // Constrain progress between 0 and 1
-    const scale = 1 + progress * 0.1; // Grow from 1 to 1.1
+    const scale = 1 + progress * 0.2; // Grow from 1 to 1.1
     scaleUpDiv.style.transform = `scale(${scale})`;
   }
 });
