@@ -286,6 +286,12 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
     border-left: 1px solid $lgtblack;
     border-right: 1px solid $lgtblack;
     max-width: 1440px;
+    opacity: 0;
+    transition: opacity 2.5s;
+
+    &.appear{
+      opacity: 1;
+    }
     .row{
       margin:0px !important
     }

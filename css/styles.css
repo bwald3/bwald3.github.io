@@ -283,6 +283,11 @@ section {
   border-left: 1px solid #424242;
   border-right: 1px solid #424242;
   max-width: 1440px;
+  opacity: 0;
+  transition: opacity 2.5s;
+}
+.spotlight-section .section-inner.appear {
+  opacity: 1;
 }
 .spotlight-section .section-inner .row {
   margin: 0px !important;
