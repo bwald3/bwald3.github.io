@@ -299,7 +299,7 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
       .arrow-btn-lg {        
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: flex-end;
         width: 45px;
         height: 45px;
         border: none;
@@ -330,7 +330,7 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
       .hidden-text {
         position: absolute;
         white-space: nowrap;
-        right: 0%;
+        left: 0%;
         width: 0%;
         opacity: 0;
         color: white;
@@ -340,21 +340,23 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
       }
       /* hover effect on button width */
       .arrow-btn-lg:hover {
-        width: 200px;
+        width: 210px;
         transition-duration: .3s;
+        background-color: $orange;
+        border-color: $orange;
       }
       
       .arrow-btn-lg:hover span {
         width: 30%;
         transition-duration: .3s;
-        padding-left: 20px;
+        padding-right: 20px;
       }
       /* hover effect button's text */
       .arrow-btn-lg:hover .hidden-text {
         opacity: 1;
         width: 70%;
         transition-duration: .3s;
-        padding-right: 10px;
+        padding-left: 20px;
       }
       /* button click effect*/
       .arrow-btn-lg:active {
@@ -370,7 +372,7 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
     }
   }
   &:hover{
-    cursor: pointer;
+    cursor: pointer !important;
     .section-col{
       // .arrow-btn-lg{
       //   position: absolute;
@@ -392,21 +394,21 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
       // }
             /* hover effect on button width */
             .arrow-btn-lg {
-              width: 200px;
+              width: 210px;
               transition-duration: .3s;
             }
             
             .arrow-btn-lg span {
               width: 30%;
               transition-duration: .3s;
-              padding-left: 20px;
+              padding-right: 20px;
             }
             /* hover effect button's text */
             .arrow-btn-lg .hidden-text {
               opacity: 1;
               width: 70%;
               transition-duration: .3s;
-              padding-right: 10px;
+              padding-left: 20px;
             }
             /* button click effect*/
             .arrow-btn-lg:active {

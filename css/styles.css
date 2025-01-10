@@ -303,7 +303,7 @@ section {
 .spotlight-section .section-inner .section-col .arrow-btn-lg {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 45px;
   height: 45px;
   border: none;
@@ -329,7 +329,7 @@ section {
 .spotlight-section .section-inner .section-col .hidden-text {
   position: absolute;
   white-space: nowrap;
-  right: 0%;
+  left: 0%;
   width: 0%;
   opacity: 0;
   color: white;
@@ -338,19 +338,21 @@ section {
   transition-duration: 0.3s;
 }
 .spotlight-section .section-inner .section-col .arrow-btn-lg:hover {
-  width: 200px;
+  width: 210px;
   transition-duration: 0.3s;
+  background-color: #ec7923;
+  border-color: #ec7923;
 }
 .spotlight-section .section-inner .section-col .arrow-btn-lg:hover span {
   width: 30%;
   transition-duration: 0.3s;
-  padding-left: 20px;
+  padding-right: 20px;
 }
 .spotlight-section .section-inner .section-col .arrow-btn-lg:hover .hidden-text {
   opacity: 1;
   width: 70%;
   transition-duration: 0.3s;
-  padding-right: 10px;
+  padding-left: 20px;
 }
 .spotlight-section .section-inner .section-col .arrow-btn-lg:active {
   transform: translate(2px, 2px);
@@ -360,7 +362,7 @@ section {
   font-size: 35px;
 }
 .spotlight-section:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .spotlight-section:hover .section-col {
   /* hover effect on button width */
@@ -368,19 +370,19 @@ section {
   /* button click effect*/
 }
 .spotlight-section:hover .section-col .arrow-btn-lg {
-  width: 200px;
+  width: 210px;
   transition-duration: 0.3s;
 }
 .spotlight-section:hover .section-col .arrow-btn-lg span {
   width: 30%;
   transition-duration: 0.3s;
-  padding-left: 20px;
+  padding-right: 20px;
 }
 .spotlight-section:hover .section-col .arrow-btn-lg .hidden-text {
   opacity: 1;
   width: 70%;
   transition-duration: 0.3s;
-  padding-right: 10px;
+  padding-left: 20px;
 }
 .spotlight-section:hover .section-col .arrow-btn-lg:active {
   transform: translate(2px, 2px);
