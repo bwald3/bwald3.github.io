@@ -256,7 +256,7 @@ section {
 }
 
 .spotlight-section {
-  min-height: 400px;
+  min-height: 0px;
   border-top: 1px solid #424242;
   width: 100%;
   position: relative;
@@ -291,9 +291,103 @@ section {
 }
 .spotlight-section .section-inner .section-col {
   padding: 30px;
+  /* plus sign */
+  /* text */
+  /* hover effect on button width */
+  /* hover effect button's text */
+  /* button click effect*/
 }
 .spotlight-section .section-inner .section-col:not(:first-child) {
   border-left: 1px solid #424242;
+}
+.spotlight-section .section-inner .section-col .arrow-btn-lg {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 300px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+}
+.spotlight-section .section-inner .section-col span {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spotlight-section .section-inner .section-col span svg {
+  width: 17px;
+}
+.spotlight-section .section-inner .section-col .hidden-text {
+  position: absolute;
+  white-space: nowrap;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+}
+.spotlight-section .section-inner .section-col .arrow-btn-lg:hover {
+  width: 200px;
+  transition-duration: 0.3s;
+}
+.spotlight-section .section-inner .section-col .arrow-btn-lg:hover span {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+.spotlight-section .section-inner .section-col .arrow-btn-lg:hover .hidden-text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+.spotlight-section .section-inner .section-col .arrow-btn-lg:active {
+  transform: translate(2px, 2px);
+}
+.spotlight-section .section-inner .section-col .arrow-btn-lg span {
+  transform: rotate(-45deg);
+  font-size: 35px;
+}
+.spotlight-section:hover {
+  cursor: pointer;
+}
+.spotlight-section:hover .section-col {
+  /* hover effect on button width */
+  /* hover effect button's text */
+  /* button click effect*/
+}
+.spotlight-section:hover .section-col .arrow-btn-lg {
+  width: 200px;
+  transition-duration: 0.3s;
+}
+.spotlight-section:hover .section-col .arrow-btn-lg span {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 20px;
+}
+.spotlight-section:hover .section-col .arrow-btn-lg .hidden-text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+.spotlight-section:hover .section-col .arrow-btn-lg:active {
+  transform: translate(2px, 2px);
+}
+.spotlight-section:hover .section-col .arrow-btn-lg span {
+  transform: rotate(0deg);
+  font-size: 35px;
 }
 .spotlight-section.last-section {
   border-bottom: 1px solid #424242;
