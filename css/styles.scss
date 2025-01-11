@@ -268,9 +268,9 @@ ul {
   transition: background-color 0.3s ease;
   .mesh-gradient{
     background-color:hsla(0,0%,100%,0);
-background-image:
-radial-gradient(at 55% 36%, hsla(242,100%,70%,0.5) 0px, transparent 50%),
-radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
+    background-image:
+    radial-gradient(at 55% 36%, hsla(242,100%,70%,0.5) 0px, transparent 50%),
+    radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
   }
   .section-inner{
     display: flex;
@@ -425,6 +425,15 @@ radial-gradient(at 30% 100%, hsla(22,100%,77%,0.5) 0px, transparent 50%);
   }
   &.last-section{
     border-bottom: 1px solid $lgtblack;
+  }
+
+  &#accountSetup{
+    .mesh-gradient{
+      background-color:hsla(0,0%,100%,0);
+      background-image:
+      radial-gradient(at 55% 36%, hsla(336,100%,74%,0.9) 0px, transparent 50%),
+      radial-gradient(at 30% 100%, hsla(211,100%,87%,0.9) 0px, transparent 50%);
+    }
   }
 
 }
