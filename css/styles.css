@@ -182,7 +182,7 @@ section {
 }
 
 .hero-section {
-  height: 160vh;
+  height: 150vh;
   min-height: 400px;
   width: 100%;
   position: relative;
@@ -200,7 +200,7 @@ section {
   margin: 20px;
   padding: 30px;
   padding-top: 100px;
-  height: 75vh;
+  height: 100vh;
   position: sticky;
   background-color: #121212;
 }
