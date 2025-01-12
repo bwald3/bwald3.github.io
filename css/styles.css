@@ -398,6 +398,13 @@ section {
   background-color: hsla(0, 0%, 100%, 0);
   background-image: radial-gradient(at 55% 36%, hsla(336, 100%, 74%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(211, 100%, 87%, 0.9) 0px, transparent 50%);
 }
+.spotlight-section#userNavigation .mesh-gradient {
+  background-color: hsla(0, 0%, 100%, 0);
+  animation: none; /* Default state without animation */
+}
+.spotlight-section#userNavigation .mesh-gradient.is-animating {
+  animation: userNavGradient 14s infinite;
+}
 
 .grow-container {
   width: 100%;
@@ -525,6 +532,9 @@ section {
 .mock-screen .screen-inner img {
   width: 100%;
 }
+.mock-screen .screen-inner video {
+  border-radius: 10px;
+}
 
 .appear {
   opacity: 1 !important;
@@ -565,5 +575,52 @@ section {
     -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
     margin-top: 0px;
+  }
+}
+@keyframes userNavGradient {
+  0% {
+    background-image: radial-gradient(at 55% 36%, hsla(207, 100%, 30%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Color 1 */
+  12.5% {
+    background-image: radial-gradient(at 55% 36%, hsla(207, 100%, 30%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Hold Color 1 */
+  14.29% {
+    background-image: radial-gradient(at 55% 36%, hsla(358, 80%, 47%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Transition to Color 2 */
+  26.79% {
+    background-image: radial-gradient(at 55% 36%, hsla(358, 80%, 47%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Hold Color 2 */
+  28.57% {
+    background-image: radial-gradient(at 55% 36%, hsla(0, 0%, 11%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Transition to Color 3 */
+  41.07% {
+    background-image: radial-gradient(at 55% 36%, hsla(0, 0%, 11%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Hold Color 3 */
+  42.86% {
+    background-image: radial-gradient(at 55% 36%, hsla(120, 100%, 18%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Transition to Color 4 */
+  55.36% {
+    background-image: radial-gradient(at 55% 36%, hsla(120, 100%, 18%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  } /* Hold Color 4 */
+  57.14% {
+    background-image: radial-gradient(at 55% 36%, hsla(337, 63%, 56%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  }
+  69.64% {
+    background-image: radial-gradient(at 55% 36%, hsla(337, 63%, 56%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  }
+  71.43% {
+    background-image: radial-gradient(at 55% 36%, hsla(29, 100%, 50%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  }
+  83.93% {
+    background-image: radial-gradient(at 55% 36%, hsla(29, 100%, 50%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  }
+  85.71% {
+    background-image: radial-gradient(at 55% 36%, hsla(257, 31%, 64%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  }
+  98.21% {
+    background-image: radial-gradient(at 55% 36%, hsla(257, 31%, 64%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
+  }
+  100% {
+    background-image: radial-gradient(at 55% 36%, hsla(207, 100%, 30%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 100%, 0.9) 0px, transparent 50%);
   }
 }/*# sourceMappingURL=styles.css.map */
