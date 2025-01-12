@@ -42,12 +42,6 @@ scroller.on('scroll', (obj) => {
     const scale = 1 + progress * 0.2; // Grow from 1 to 1.1
     scaleUpDiv.style.transform = `scale(${scale})`;
   }
-
-  if (func === "is-animating" && direction === "enter") {
-    obj.el.classList.add("is-animating"); // Add the animation class
-  } else if (func === "is-animating" && direction === "leave") {
-    obj.el.classList.remove("is-animating"); // Remove the animation class if you want to stop when out of view
-  }
 });
 
   
