@@ -177,7 +177,7 @@ ul {
     }
   }
 .hero-section{
-  height:160vh;
+  // height:100vh;
   min-height: 400px;
   width: 100%;
   position: relative;
@@ -185,6 +185,7 @@ ul {
   flex-direction: column;
   margin-bottom: 80px;
   // background-color: #f2f2f2;
+  background-color: $drkblack;  
   overflow: hidden;
   .section-inner{
     border-radius: $br;
@@ -195,7 +196,8 @@ ul {
     padding:30px;
     padding-top:100px;
     height:75vh;
-    // background-color: $drkblack;  
+    background-color: $white;
+    color: $drkblack  ;
     // box-shadow:  0px 0px 30px inset rgba(255, 255, 255, 0.25);
     &.section-full-height{
       height:100vh;
@@ -255,6 +257,25 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+.featured-work{
+  .fw-grid{
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    .fw-card{
+      width: 100%;
+      min-height: 400px;
+      overflow: hidden;
+      border-radius: $br;
+      object-fit: cover;
+      img{
+        width:100%;
+        object-fit: cover;
+      }
+    }
   }
 }
 .spotlight-section{

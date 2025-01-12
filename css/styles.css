@@ -182,13 +182,13 @@ section {
 }
 
 .hero-section {
-  height: 160vh;
   min-height: 400px;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
+  background-color: #121212;
   overflow: hidden;
 }
 .hero-section .section-inner {
@@ -200,6 +200,8 @@ section {
   padding: 30px;
   padding-top: 100px;
   height: 75vh;
+  background-color: #f2f2f2;
+  color: #121212;
 }
 .hero-section .section-inner.section-full-height {
   height: 100vh;
@@ -251,6 +253,26 @@ section {
   display: block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.featured-work .fw-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+.featured-work .fw-grid .fw-card {
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 17px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured-work .fw-grid .fw-card img {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
