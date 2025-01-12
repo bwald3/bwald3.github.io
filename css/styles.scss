@@ -177,14 +177,14 @@ ul {
     }
   }
 .hero-section{
-  height:150vh;
+  height:160vh;
   min-height: 400px;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
   overflow: hidden;
   .section-inner{
     border-radius: $br;
@@ -194,9 +194,8 @@ ul {
     margin:20px;
     padding:30px;
     padding-top:100px;
-    height:100vh;
-    position: sticky;
-    background-color: $drkblack;  
+    height:75vh;
+    // background-color: $drkblack;  
     // box-shadow:  0px 0px 30px inset rgba(255, 255, 255, 0.25);
     &.section-full-height{
       height:100vh;
@@ -640,4 +639,97 @@ ul {
 .height-auto{
   min-height: auto;
   height: auto;
+}
+
+.w-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+  .w-card{
+    display: flex;
+    border-radius: $br;
+    background-color: $mdblack;
+    width: 100%;
+    overflow: hidden;
+    .section-col-text{
+
+    }
+    .section-col-img{
+      padding: 30px 30px 0px 30px;
+      overflow: hidden;
+      .mock-screen{
+        width: 100%;
+        border-radius: $brinner;
+        display: flex;
+        padding:5px 5px 0px 5px;
+        position: relative;
+        background-color: rgba(242,242,242, 0.15);
+        transition: all 0.4s;
+      }
+      .feature-img{
+        width:100%;
+        img{
+          border-radius: $brinner $brinner 0px 0px;
+          width:100%;
+        }
+        video{
+          width: 100%;
+        }
+      }
+    }
+    &:hover{
+      .mock-screen{
+        transform: scale(1.05);
+      }
+    }
+  }
+  .w-card-horizontal{
+    flex-direction: row;
+    align-items: end;
+    grid-column: span 2/-1;
+    .section-col-text{
+      padding:50px 20px;
+    }
+    .section-col-img{
+      padding: 30px 30px 0px 30px
+    }
+  }
+  .w-card-vertical{
+    flex-direction: column;
+    .section-col-text{
+      padding:20px;
+    }
+  }
+  #accountSetup{
+    .mesh-gradient{
+      background-color:hsla(0,0%,100%,0);
+      background-image:
+      radial-gradient(at 55% 36%, hsla(336,100%,74%,0.9) 0px, transparent 50%),
+      radial-gradient(at 30% 100%, hsla(211,100%,87%,0.9) 0px, transparent 50%);
+    }
+  }
+  #helpPanel{
+    .mesh-gradient{
+      background-color:hsla(0,0%,100%,0);
+      background-image:
+      radial-gradient(at 55% 36%, hsla(207,100%,30%,0.9) 0px, transparent 50%),
+      radial-gradient(at 30% 100%, hsla(0, 0%, 60%, 0.9) 0px, transparent 50%);
+    }
+  }
+  #myOrangeWhip{
+    .mesh-gradient{
+      background-color:hsla(0,0%,100%,0);
+      background-image:
+      radial-gradient(at 55% 36%, hsla(0, 75%, 50%, 0.9) 0px, transparent 50%),
+      radial-gradient(at 30% 100%, hsla(35,100%,45%,0.9) 0px, transparent 50%);
+    }
+  }
+  #userNavigation{
+    .mesh-gradient{
+      background-color:hsla(0,0%,100%,0);
+      background-image:
+      radial-gradient(at 55% 36%, hsla(55,0%,40%,0.9) 0px, transparent 50%),
+      radial-gradient(at 30% 100%, hsla(0,0%,60%,0.9) 0px, transparent 50%);
+    }
+  }
 }
