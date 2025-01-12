@@ -257,29 +257,8 @@ section {
      object-fit: cover;
 }
 
-.featured-work .fw-grid {
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
-}
-.featured-work .fw-grid .fw-card {
-  width: 100%;
-  min-height: 400px;
-  overflow: hidden;
-  border-radius: 17px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.featured-work .fw-grid .fw-card img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .spotlight-section {
   min-height: 0px;
-  border-top: 1px solid #424242;
   width: 100%;
   position: relative;
   display: flex;
@@ -302,25 +281,20 @@ section {
   margin-right: auto;
   height: 100%;
   overflow: hidden;
-  border-left: 1px solid #424242;
-  border-right: 1px solid #424242;
   max-width: 1440px;
-  opacity: 0;
-  transition: opacity 2.5s;
 }
 .spotlight-section .section-inner .row {
   margin: 0px !important;
 }
 .spotlight-section .section-inner .section-col {
+  opacity: 0;
+  transition: opacity 2.5s;
   padding: 30px;
   /* plus sign */
   /* text */
   /* hover effect on button width */
   /* hover effect button's text */
   /* button click effect*/
-}
-.spotlight-section .section-inner .section-col:not(:first-child) {
-  border-left: 1px solid #424242;
 }
 .spotlight-section .section-inner .section-col .arrow-btn-lg {
   display: flex;
@@ -382,6 +356,9 @@ section {
 .spotlight-section .section-inner .section-col .arrow-btn-lg span {
   transform: rotate(-45deg);
   font-size: 35px;
+}
+.spotlight-section .section-inner.appear {
+  opacity: 1;
 }
 .spotlight-section:hover {
   cursor: pointer !important;
@@ -560,10 +537,6 @@ section {
 }
 .mock-screen .screen-inner video {
   border-radius: 10px;
-}
-
-.appear {
-  opacity: 1 !important;
 }
 
 @media (min-width: 767px) {
