@@ -182,13 +182,14 @@ section {
 }
 
 .hero-section {
+  height: 160vh;
   min-height: 400px;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 80px;
-  background-color: #121212;
+  background-color: #f2f2f2;
   overflow: hidden;
 }
 .hero-section .section-inner {
@@ -200,8 +201,8 @@ section {
   padding: 30px;
   padding-top: 100px;
   height: 75vh;
-  background-color: #f2f2f2;
-  color: #121212;
+  position: sticky;
+  background-color: #121212;
 }
 .hero-section .section-inner.section-full-height {
   height: 100vh;
@@ -259,6 +260,7 @@ section {
 
 .spotlight-section {
   min-height: 0px;
+  border-top: 1px solid #424242;
   width: 100%;
   position: relative;
   display: flex;
@@ -274,27 +276,32 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
+  margin: 0px 20px;
   width: 90%;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-  border-radius: 17px;
+  overflow: hidden;
+  border-left: 1px solid #424242;
+  border-right: 1px solid #424242;
   max-width: 1440px;
+  opacity: 0;
+  transition: opacity 2.5s;
 }
 .spotlight-section .section-inner .row {
   margin: 0px !important;
 }
 .spotlight-section .section-inner .section-col {
-  opacity: 0;
-  transition: opacity 2.5s;
   padding: 30px;
   /* plus sign */
   /* text */
   /* hover effect on button width */
   /* hover effect button's text */
   /* button click effect*/
+}
+.spotlight-section .section-inner .section-col:not(:first-child) {
+  border-left: 1px solid #424242;
 }
 .spotlight-section .section-inner .section-col .arrow-btn-lg {
   display: flex;
@@ -356,9 +363,6 @@ section {
 .spotlight-section .section-inner .section-col .arrow-btn-lg span {
   transform: rotate(-45deg);
   font-size: 35px;
-}
-.spotlight-section .section-inner .section-col.appear {
-  opacity: 1;
 }
 .spotlight-section:hover {
   cursor: pointer !important;
@@ -537,6 +541,10 @@ section {
 }
 .mock-screen .screen-inner video {
   border-radius: 10px;
+}
+
+.appear {
+  opacity: 1 !important;
 }
 
 @media (min-width: 767px) {
