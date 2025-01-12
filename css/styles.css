@@ -580,4 +580,8 @@ section {
             backdrop-filter: blur(12px);
     margin-top: 0px;
   }
+}
+.height-auto {
+  min-height: auto;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */

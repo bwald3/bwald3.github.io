@@ -118,6 +118,7 @@ ul {
     }
   }
 }
+
   section{ 
     min-height: 100vh;
   }
@@ -633,4 +634,9 @@ ul {
       margin-top:0px;
     }
   }
+}
+
+.height-auto{
+  min-height: auto;
+  height: auto;
 }
