@@ -279,13 +279,14 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:0px 20px;
+    margin:20px;
     width: 90%;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
     height:100%;
-    overflow: hidden;
+    // overflow: hidden;
+    border-radius: $br;
     // border-left: 1px solid $lgtblack;
     // border-right: 1px solid $lgtblack;
     max-width: 1440px;
@@ -372,9 +373,9 @@ ul {
           font-size: 35px;
         }
       }
-    }
-    &.appear{
-      opacity: 1;
+      &.appear{
+        opacity: 1;
+      }
     }
   }
   &:hover{

@@ -274,13 +274,13 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0px 20px;
+  margin: 20px;
   width: 90%;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
   height: 100%;
-  overflow: hidden;
+  border-radius: 17px;
   max-width: 1440px;
 }
 .spotlight-section .section-inner .row {
@@ -357,7 +357,7 @@ section {
   transform: rotate(-45deg);
   font-size: 35px;
 }
-.spotlight-section .section-inner.appear {
+.spotlight-section .section-inner .section-col.appear {
   opacity: 1;
 }
 .spotlight-section:hover {
