@@ -97,6 +97,20 @@ ul {
     grid-column: 1 / span 2;
 
   }
+  .feature-card-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:30px 30px 0px 30px;
+    .card-feature-img{
+      padding:20px 20px 0px 20px;
+      background-color: rgba(255,255,255, 0.2);
+      border-radius: 17px 17px 0px 0px;
+      img, video{
+        border-radius: 7px 7px 0px 0px;
+      }
+    }
+  }
 }
 .account-setup-bg{
   background-color: #007bff;
