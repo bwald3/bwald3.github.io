@@ -38,7 +38,7 @@ h1,
 
 h2,
 .text-size-h2 {
-  font-size: 3.16rem;
+  font-size: 6rem;
 }
 
 h3,
@@ -79,43 +79,51 @@ ul > li:before {
   margin-left: -1em;
 }
 
-.dashed-lines {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+.w-contain {
   max-width: 1200px;
-  transform: translateX(-50%);
+  width: 100%;
+  margin: 0 auto;
 }
 
-.line {
-  position: absolute;
-  top: 0;
-  width: 1px;
-  height: 100vh;
-  background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 5px, transparent 5px, transparent 10px);
+.bw-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.bw-grid .grid-item-1 {
+  padding: 30px;
+  border-radius: 17px;
+}
+.bw-grid .grid-item-2 {
+  padding: 30px;
+  border-radius: 17px;
+  grid-column: 1/span 2;
 }
 
-.line:nth-child(1) {
-  left: 0%;
+.account-setup-bg {
+  background-color: #007bff;
 }
 
-.line:nth-child(2) {
-  left: 25%;
+.launch-label {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #f2f2f2;
+  width: auto;
+  border-radius: 300px;
+  padding: 5px 10px;
 }
 
-.line:nth-child(3) {
-  left: 50%;
+.feature-tags {
+  display: flex;
+  flex-direction: row;
 }
-
-.line:nth-child(4) {
-  left: 75%;
-}
-
-.line:nth-child(5) {
-  left: 100%;
+.feature-tags .tag {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #f2f2f2;
+  width: auto;
+  border-radius: 300px;
+  padding: 10px 20px;
+  margin-right: 5px;
 }
 
 .nav-btn {
@@ -671,27 +679,6 @@ section {
 .w-grid .w-card .section-col-img .feature-img video {
   width: 100%;
   border-radius: 7px;
-}
-.w-grid .w-card .c-footer {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-.w-grid .w-card .c-footer .feature-tags {
-  display: flex;
-  flex-direction: row;
-}
-.w-grid .w-card .c-footer .feature-tags .tag {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #f2f2f2;
-  width: auto;
-  border-radius: 300px;
-  padding: 10px 20px;
-  margin-right: 5px;
 }
 .w-grid .w-card:hover .mock-screen {
   transform: scale(1.05);

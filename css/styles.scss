@@ -45,7 +45,7 @@ h1,
 }
 
 h2,
-.text-size-h2 { font-size: 3.16rem; }
+.text-size-h2 { font-size: 6rem; }
 
 h3,
 .text-size-h3 { font-size: 2.37rem; }
@@ -77,36 +77,50 @@ ul {
   }
 }
 
-.dashed-lines {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+.w-contain{
   max-width: 1200px;
-  transform: translateX(-50%);
+  width: 100%;
+  margin: 0 auto;
+}
+.bw-grid{
+  padding:20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:20px;
+  .grid-item-1{
+    padding:30px;
+    border-radius: $br;
+  }
+  .grid-item-2{
+    padding:30px;
+    border-radius: $br;
+    grid-column: 1 / span 2;
+
+  }
+}
+.account-setup-bg{
+  background-color: #007bff;
 }
 
-.line {
-  position: absolute;
-  top: 0;
-  width: 1px;
-  height: 100vh;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255,255,255,0.15) 0%,
-    rgba(255,255,255,0.15) 5px,
-    transparent 5px,
-    transparent 10px
-  );
+.launch-label{
+    background-color: rgba(255,255,255, 0.2);
+    color:$white;
+    width: auto;
+    border-radius: 300px;
+    padding: 5px 10px;
+  }
+.feature-tags{
+  display: flex;
+  flex-direction: row;
+  .tag{
+    background-color: rgba(255,255,255, 0.2);
+    color:$white;
+    width: auto;
+    border-radius: 300px;
+    padding: 10px 20px;
+    margin-right:5px;
+  }
 }
-
-.line:nth-child(1) { left: 0%; }
-.line:nth-child(2) { left: 25%; }
-.line:nth-child(3) { left: 50%; }
-.line:nth-child(4) { left: 75%; }
-.line:nth-child(5) { left: 100%; }
 
 .nav-btn{
   background-color: transparent;
@@ -724,27 +738,7 @@ ul {
         }
       }
     }
-    .c-footer{
-      position: absolute;
-      bottom:0px;
-      left:0px;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      padding:10px;
-      .feature-tags{
-        display: flex;
-        flex-direction: row;
-        .tag{
-          background-color: rgba(0,0,0, 0.4);
-          color:$white;
-          width: auto;
-          border-radius: 300px;
-          padding: 10px 20px;
-          margin-right:5px;
-        }
-      }
-    }
+    
     &:hover{
       .mock-screen{
         transform: scale(1.05);
