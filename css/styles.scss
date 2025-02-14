@@ -87,7 +87,7 @@ ul {
   position: relative;
 }
 .bw-grid{
-  padding:20px;
+  padding:0px 20px 20px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap:20px;
@@ -107,10 +107,14 @@ ul {
     justify-content: space-between;
     padding:30px 30px 0px 30px;
   }
-  .feature-card-horizonatal{
+  .feature-card-horizontal{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding:30px 30px 0px 30px;
+    .card-feature-img{
+      width: calc(50% - 40px);
+    }
   }
   .card-feature-img{
     padding:20px 20px 0px 20px;
@@ -125,9 +129,48 @@ ul {
   }
 }
 .account-setup-bg{
+  background-color: #B856E9;
+}
+.help-panel-bg{
   background-color: #007bff;
 }
+.club-customizer-bg{
+  background-color: #E07F2C;
+}
+.user-nav-bg{
+  background-color: #295E22;
+}
+.expertise-card-1{
+  background-color: #4f4f4f;
+  overflow: hidden;
+}
+.expertise-card-2{
+  background-color: #0E51B5;
+  overflow: hidden;
+}
+.expertise-card-3{
+  background-color: #7D00B8;
+  overflow: hidden;
+}
+.skill-card{
+  background-color: rgba(255,255,255, 0.2);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  .skill-row{
+    margin-bottom:10px;
+  }
+}
 
+.step-number{
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .launch-label{
     background-color: rgba(255,255,255, 0.2);
     color:$white;
@@ -145,6 +188,7 @@ ul {
     border-radius: 300px;
     padding: 10px 20px;
     margin-right:5px;
+    white-space: nowrap;
   }
 }
 
@@ -256,7 +300,6 @@ ul {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 80px;
   overflow: hidden;
   .section-inner{
     border-radius: $br;
@@ -266,7 +309,7 @@ ul {
     margin:20px;
     padding:30px;
     padding-top:100px;
-    height:75vh;
+    height:100%;
     background-color:hsla(0,100%,50%,1);
     background-image:
     radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
