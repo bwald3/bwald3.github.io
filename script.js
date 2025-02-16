@@ -13,7 +13,13 @@ loadFile("footer", "/footer.html");
 
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+    smooth: true,
+    smartphone: {
+       smooth: true
+   },
+   tablet: {
+       smooth: true
+   }
   });
 // Select elements for shrinking and growing
 const scaleDownDiv = document.querySelector('.scroll-scale'); // Shrinks
