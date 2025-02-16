@@ -216,6 +216,11 @@ ul > li:before {
     margin-top: 90px;
   }
 }
+@media (max-width: 1023px) {
+  .hero-section .section-inner h1.secondary-h1 {
+    font-size: 3rem;
+  }
+}
 .step-icon {
   width: 80px;
   height: 80px;
