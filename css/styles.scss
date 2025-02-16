@@ -1,4 +1,4 @@
-$drkblack: #121212;
+$drkblack: #1a1a1a;
 $mdblack: #222222;
 $mdlghtblack: #323232;
 $lgtblack:#424242;
@@ -40,21 +40,21 @@ h1,
 .text-size-h1 {
   font-family: 'Poppins', sans-serif;
   margin-top: 0;
-  font-size: 8rem; 
+  font-size: 5rem; 
   font-weight: 900;
 }
 
 h2,
-.text-size-h2 { font-size: 6rem; }
+.text-size-h2 { font-size: 4rem; }
 
 h3,
-.text-size-h3 { font-size: 2.37rem; }
+.text-size-h3 { font-size: 2.4rem; }
 
 h4,
-.text-size-h4 { font-size: 1.78rem; }
+.text-size-h4 { font-size: 1.8rem; }
 
 h5,
-.text-size-h5 { font-size: 1.33rem; }
+.text-size-h5 { font-size: 1.3rem; }
 
 .text-caption { font-size: 0.75rem; font-weight: 300;}
 
@@ -87,10 +87,10 @@ ul {
   position: relative;
 }
 .bw-grid{
-  padding:0px 20px 20px 20px;
+  padding:10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap:20px;
+  grid-template-columns: 1fr;
+  gap:10px;
   .grid-item-1{
     padding:30px;
     border-radius: $br;
@@ -98,7 +98,7 @@ ul {
   .grid-item-2{
     padding:30px;
     border-radius: $br;
-    grid-column: 1 / span 2;
+    grid-column: 1;
 
   }
   .feature-card-vertical{
@@ -119,14 +119,14 @@ ul {
   }
   .feature-card-horizontal{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     padding:30px 30px 0px 30px;
     position: relative;
     overflow: hidden;
     .card-feature-img{
-      width: calc(50% - 40px);
-      margin-top:90px;
+      width: 100%;
+      margin-top:20px;
     }
     &:hover{
       .arrow-btn-lg {        
@@ -170,16 +170,46 @@ ul {
     margin-bottom:10px;
   }
 }
-.expertise-card-2{
-  background-color: #0E51B5;
-  overflow: hidden;
-  .skill-row{
-    margin-bottom:10px;
+.expertise-section{
+  padding:0px;
+  .expertise-card{
+    background-color: #4f4f4f;
+    overflow: hidden;
+    padding:30px;
+    border-radius: $br;
+    .skill-row{
+      margin-bottom:10px;
+    }
   }
 }
-.expertise-card-3{
-  background-color: #7D00B8;
-  overflow: hidden;
+
+
+
+@media (min-width:1024px){
+  h1,
+  .text-size-h1 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+    font-size: 8rem; 
+    font-weight: 900;
+  }
+
+  h2,
+  .text-size-h2 { font-size: 6rem; }
+  .bw-grid{
+    grid-template-columns: 1fr 1fr;
+    .grid-item-2{
+      grid-column: 1 / span 2;
+  
+    }
+    .feature-card-horizontal{
+      flex-direction: row;
+      .card-feature-img{
+        width: calc(50% - 40px);
+        margin-top:90px;
+      }
+    }
+  }
 }
 
 .step-icon{
@@ -263,6 +293,7 @@ ul {
 
   section{ 
     min-height: 100vh;
+    background-color: $drkblack;
   }
   .bw-full-width {
     width: 90%;
@@ -331,6 +362,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: sticky;
+    top:20px;
     margin:20px;
     padding:30px;
     padding-top:100px;
