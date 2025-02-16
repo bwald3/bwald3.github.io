@@ -17,52 +17,57 @@
   <body>
     <div id="navHeader"></div>
     <div data-scroll-container>
-      <section class="hero-section" data-scroll-section>
-        <div data-scroll class="section-inner scroll-scale">
-          <h1 class="text-center">Side Navigation</h1>
-          <p class="text-center">UI/UX Design | Frontend Development</p>
-        </div>
-        <div class="section-inner section-full-height scroll-scale-up">
-          <div class="showcase-outer">
-            <div class="showcase-inner">
-              <video src="/img/user-menu.mp4" autoplay muted width="100%" loop="loop"></video>
+      <section class="hero-section hero-work">
+        <div class="section-inner scroll-scale user-nav-bg">
+          <div class="work-heading">
+            <h2>User Navigation</h2>
+            <div class="feature-tags">
+              <div class="tag">UI/UX</div>
+              <div class="tag">Frontend Dev</div>
             </div>
+          </div>
+          <div class="hero-feature-img">
+            <video src="/img/user-menu.mp4" autoplay muted width="100%" loop="loop"></video>
           </div>
         </div>
       </section>
-      <section class="bw-full-width" data-scroll-section>
-        <div class="spotlight">
-          <div class="grid-section">
-            <div class="grid-2">
-              <h2 class="h5">My Role</h2>
-              <p>UI/UX Design | Frontend Development</p>
-              <h2 class="h5">Team</h2>
-              <p>Chris Guaghan - <span class="small">Senior Software Dev</span></p>
-              <p>Camilla Temu - <span class="small">Project Manager</span></p>
-              <h2 class="h5">Timeline</h2>
-              <p>2 Months - Launched in August 2023</p>
-            </div>
-            <div class="grid-2">
-              <h2 class="h5">Overview</h2>
-              <p>Users of our platform were struggling to navigate through our system quickly and effortlessly.</p>
-              <p>I led the design direction and overall user experience, along with the frontend development of a new navigation system.</p>
-              <p>The launch of the new navigation exceeded our expectations. Our community responded positively to the changes and expressed relief at the improved ease of navigation.</p>
-            </div>
-            <div class="grid-2">
-              <div class="img-container">
-                <img class="img" src="/img/side-nav-old.jpg"/>
-              </div>
-              <h2 class="h5 text-center">Old</h2>
-            </div> 
-            <div class="grid-2">
-              <div class="img-container">
-                <img class="img" src="/img/side-nav-new.jpg"/>
-              </div>
-              <h2 class="h5 text-center">New</h2>
-            </div>    
-          </div>   
+      <section class="bw-grid" data-scroll-section>
+        <div class="grid-item-1">
+          <h2 class="h4">My Role</h2>
+          <p>UI/UX Design | Frontend Development</p>
+          <h2 class="h4">Team</h2>
+          <p>Chris Guaghan - <span class="small">Senior Software Dev</span></p>
+          <p>Camilla Temu - <span class="small">Project Manager</span></p>
+          <h2 class="h4">Timeline</h2>
+          <p>2 Months - Launched in August 2023</p>
         </div>
-      </section>
+        <div class="grid-item-1" >
+          <h2 class="h5">Overview</h2>
+          <p>Users of our platform were struggling to navigate through our system quickly and effortlessly.</p>
+           <p>I led the design direction and overall user experience, along with the frontend development of a new navigation system.</p>
+          <p>The launch of the new navigation exceeded our expectations. Our community responded positively to the changes and expressed relief at the improved ease of navigation.</p>
+        </div>
+        <div class="grid-item-1" >
+          <h3>Problem</h3>
+          <p>Users struggle to navigate the system quickly and effortlessly.</p>        
+        </div>
+        <div class="grid-item-1" >
+          <h3>Research</h3>
+          <h6>Major Pain Points:</h6>
+          <p>Lack of visual representation of each of the different navigation menu items</p>
+          <p>Having to scroll all the way to the top of a page to access navigation.</p>
+          <p>Difficult to operate on mobile devices.</p>
+        </div>
+        <div class="grid-item-2">
+          <h2>Highlights</h2>
+        </div>
+        <div class="grid-item-2">
+          <div>
+            <h3>Fixed Menu</h3>
+            <p>Use of a fixed side navigation so users can quickly navigate the system with unnecessary scrolling back upwards.</p>
+          </div>
+        </div>
+       </section>
     </div> 
     <script src="/locomotive-scroll.min.js"></script> 
     <script src="/script.js"></script>
