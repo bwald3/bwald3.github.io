@@ -169,6 +169,15 @@ ul > li:before {
   background-image: none !important;
 }
 
+.lght-gray-card {
+  background-color: #E5E5E5;
+  color: #1a1a1a;
+}
+.lght-gray-card .feature-tags .tag {
+  color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .expertise-card-1 {
   background-color: #4f4f4f;
   overflow: hidden;
@@ -256,6 +265,12 @@ ul > li:before {
   padding: 10px 20px;
   margin-right: 5px;
   white-space: nowrap;
+}
+.feature-tags.about-tags {
+  flex-wrap: wrap;
+}
+.feature-tags.about-tags .tag {
+  margin-bottom: 5px;
 }
 
 .nav-btn {
@@ -364,7 +379,7 @@ section {
 }
 
 .hero-section {
-  height: 100vh;
+  height: 90vh;
   min-height: 400px;
   width: 100%;
   position: relative;

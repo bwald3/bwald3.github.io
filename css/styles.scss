@@ -164,6 +164,16 @@ ul {
   background-color: #295E22 !important;
   background-image: none !important;
 }
+.lght-gray-card{
+  background-color: #E5E5E5;
+  color:$drkblack;
+  .feature-tags{
+    .tag{
+      color: $drkblack;
+      background-color: rgba(0,0,0, 0.2);
+    }
+  }
+}
 .expertise-card-1{
   background-color: #4f4f4f;
   overflow: hidden;
@@ -254,6 +264,12 @@ ul {
     padding: 10px 20px;
     margin-right:5px;
     white-space: nowrap;
+  }
+  &.about-tags{
+    flex-wrap: wrap;
+    .tag{
+      margin-bottom:5px;
+    }
   }
 }
 
@@ -360,7 +376,7 @@ ul {
     }
   }
 .hero-section{
-  height:100vh;
+  height:90vh;
   min-height: 400px;
   width: 100%;
   position: relative;
