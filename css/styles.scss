@@ -10,7 +10,7 @@ $br: 17px;
 $brinner: 7px;
 
 
-html {font-size: 18px;}
+html {font-size: 1rem;}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -125,7 +125,7 @@ ul {
       border-radius: 17px 17px 0px 0px;
       margin-top:30px;
       transition-duration: .2s;
-      max-width: 1200px;
+      max-width: 1000px;
       min-width: 400px;
       img, video{
         border-radius: 7px 7px 0px 0px;
@@ -203,32 +203,16 @@ ul {
     grid-column: 1;
 
   }
-  .feature-card-vertical{
+  .feature-card{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding:30px 30px 0px 30px;
     position: relative;
     overflow: hidden;
-    &:hover{
-      .arrow-btn-lg {        
-        transform: translate(15px,-15px);
-      }
-      .card-feature-img{
-        transform: scale(1.05);
-      }
-    }
-  }
-  .feature-card-horizontal{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding:30px 30px 0px 30px;
-    position: relative;
-    overflow: hidden;
-    .card-feature-img{
-      width: 100%;
-      margin-top:20px;
+    a{
+      color:inherit;
+      text-decoration: none;
     }
     &:hover{
       .arrow-btn-lg {        
@@ -239,6 +223,50 @@ ul {
       }
     }
   }
+  // .feature-card-vertical{
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   padding:30px 30px 0px 30px;
+  //   position: relative;
+  //   overflow: hidden;
+  //   a{
+  //     color:inherit;
+  //     text-decoration: none;
+  //   }
+  //   &:hover{
+  //     .arrow-btn-lg {        
+  //       transform: translate(15px,-15px);
+  //     }
+  //     .card-feature-img{
+  //       transform: scale(1.05);
+  //     }
+  //   }
+  // }
+  // .feature-card-horizontal{
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   padding:30px 30px 0px 30px;
+  //   position: relative;
+  //   overflow: hidden;
+  //   a{
+  //     color:inherit;
+  //     text-decoration: none;
+  //   }
+  //   .card-feature-img{
+  //     width: 100%;
+  //     margin-top:20px;
+  //   }
+  //   &:hover{
+  //     .arrow-btn-lg {        
+  //       transform: translate(15px,-15px);
+  //     }
+  //     .card-feature-img{
+  //       transform: scale(1.05);
+  //     }
+  //   }
+  // }
   .card-feature-img{
     padding:20px 20px 0px 20px;
     background-color: rgba(255,255,255, 0.2);
@@ -253,8 +281,26 @@ ul {
     }
   }
 }
+.inverse-card{
+  background-color: #E5E5E5 !important;
+  color:$drkblack !important;
+  background-image: none !important;
+  .feature-tags{
+    .tag{
+      color: $drkblack;
+      background-color: rgba(0,0,0, 0.15);
+    }
+  }
+  .card-feature-img{
+    background-color: rgba(0,0,0, 0.15);
+  }
+  .arrow-btn-lg{
+    background-color: rgba(0,0,0, 0.15);
+  }
+}
 .account-setup-bg{
-  background-color: #B856E9;
+  background-color: #B856E9 !important;
+  background-image: none !important; 
 }
 .help-panel-bg{
   background-color: #007bff !important;
@@ -272,29 +318,8 @@ ul {
   background-color: #653cdf !important;
   background-image: none !important;
 }
-.ow-home-bg{
-  background-color: #E5E5E5;
-  color:$drkblack;
-  .feature-tags{
-    .tag{
-      color: $drkblack;
-      background-color: rgba(0,0,0, 0.2);
-    }
-  }
-}
 .fg-website-bg{
   background-color: #c56c00;
-}
-.profile-page-bg{
-  background-color: #E5E5E5 !important;
-  color:$drkblack !important;
-  background-image: none !important;
-  .feature-tags{
-    .tag{
-      color: $drkblack;
-      background-color: rgba(0,0,0, 0.2);
-    }
-  }
 }
 .about-orange{
   background-color: #be4312;
@@ -305,7 +330,7 @@ ul {
   .feature-tags{
     .tag{
       color: $drkblack;
-      background-color: rgba(0,0,0, 0.2);
+      background-color: rgba(0,0,0, 0.15);
     }
   }
 }
@@ -348,13 +373,22 @@ ul {
       grid-column: 1 / span 2;
   
     }
-    .feature-card-horizontal{
-      flex-direction: row;
-      .card-feature-img{
-        width: calc(50% - 40px);
-        margin-top:90px;
+    .feature-card{
+      &.f-card-horizontal{
+        flex-direction: row;
+        .card-feature-img{
+          width: calc(50% - 40px);
+          margin-top:90px;
+        }
       }
     }
+    // .feature-card-horizontal{
+    //   flex-direction: row;
+    //   .card-feature-img{
+    //     width: calc(50% - 40px);
+    //     margin-top:90px;
+    //   }
+    // }
   }
 }
 @media (max-width:1023px){
