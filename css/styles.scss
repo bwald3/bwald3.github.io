@@ -353,6 +353,21 @@ ul {
     }
   }
 }
+.lg-tags{
+  background-color: rgba(255,255,255, 0.2);
+  color:$white;
+  width: auto !important;
+  border-radius: 300px;
+  padding: 30px 60px;
+  font-size: 1.8rem; 
+  margin-right:5px;
+  white-space: nowrap;
+}
+.swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+}
 
 
 

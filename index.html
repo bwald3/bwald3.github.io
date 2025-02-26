@@ -24,6 +24,65 @@
           <h1 class="text-center secondary-h1">UI Designer & Developer</h1>
         </div>
       </section>
+      <section data-scroll-section id="section-1">
+        <h2 data-scroll data-scroll-sticky data-scroll-target="#section-1" style="bottom:0px;">UI Designer & Developer</h2>
+        <div class="swiper skillSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide lg-tags">UI/UX Design</div>
+            <div class="swiper-slide lg-tags">Frontend Development</div>
+            <div class="swiper-slide lg-tags">Responsive Web Design</div>
+            <div class="swiper-slide lg-tags">Graphic Design</div>
+            <div class="swiper-slide lg-tags">Wireframing</div>
+            <div class="swiper-slide lg-tags">Prototyping</div>
+            <div class="swiper-slide lg-tags">Design Systems</div>
+            <div class="swiper-slide lg-tags">Brand Identity</div>
+            <div class="swiper-slide lg-tags">Layout Design</div>
+            <div class="swiper-slide lg-tags">Logo Design</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper toolSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide lg-tags">UI/UX Design</div>
+            <div class="swiper-slide lg-tags">Frontend Development</div>
+            <div class="swiper-slide lg-tags">Responsive Web Design</div>
+            <div class="swiper-slide lg-tags">Graphic Design</div>
+            <div class="swiper-slide lg-tags">Wireframing</div>
+            <div class="swiper-slide lg-tags">Prototyping</div>
+            <div class="swiper-slide lg-tags">Design Systems</div>
+            <div class="swiper-slide lg-tags">Brand Identity</div>
+            <div class="swiper-slide lg-tags">Layout Design</div>
+            <div class="swiper-slide lg-tags">Logo Design</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <script>
+          var swiper = new Swiper(".skillSwiper", {
+            slidesPerView: "auto",
+            loop: true,
+            spaceBetween: 10,
+            autoplay: {
+              delay: 0,
+              disableOnInteraction: false,
+            },
+            speed: 5000,  
+          });
+        </script>
+        <script>
+          var swiper = new Swiper(".toolSwiper", {
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            speed: 5000,
+            autoplay: {
+              delay: 0,
+              disableOnInteraction: false,
+              reverseDirection: true,
+            },
+            loop: true,
+          });
+        </script>
+      </section>
+
       <section class="bw-grid" data-scroll-section>
         <div class="grid-item-1" data-scroll>
           <div>Collection</div>
