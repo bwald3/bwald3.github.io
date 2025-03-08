@@ -24,7 +24,7 @@ h4,
 h5 {
   font-family: "Poppins", sans-serif;
   font-weight: true;
-  line-height: 1.15;
+  line-height: 1.4em;
   font-weight: 600;
 }
 
@@ -104,10 +104,10 @@ ul > li:before {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   position: sticky;
   top: 20px;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   padding: 30px;
   padding-top: 100px;
   height: 100%;
@@ -133,6 +133,21 @@ ul > li:before {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.hero-section .section-inner.hero-grid {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.hero-section .section-inner.hero-grid .grid-item-1 {
+  padding: 30px;
+  border-radius: 17px;
+}
+.hero-section .section-inner.hero-grid .grid-item-2 {
+  padding: 30px;
+  border-radius: 17px;
+  grid-column: 1;
 }
 .hero-section.hero-work .work-heading {
   text-align: center;
@@ -181,7 +196,7 @@ ul > li:before {
 }
 
 .bw-grid {
-  padding: 10px;
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
@@ -199,9 +214,14 @@ ul > li:before {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px 30px 0px 30px;
+  padding: 0px;
   position: relative;
   overflow: hidden;
+  background-color: #222222;
+  color: #eee;
+}
+.bw-grid .feature-card .card-description {
+  padding: 30px;
 }
 .bw-grid .feature-card a {
   color: inherit;
@@ -210,15 +230,13 @@ ul > li:before {
 .bw-grid .feature-card:hover .arrow-btn-lg {
   transform: translate(15px, -15px);
 }
-.bw-grid .feature-card:hover .card-feature-img {
+.bw-grid .feature-card:hover .card-feature-img img, .bw-grid .feature-card:hover .card-feature-img video {
   transform: scale(1.05);
 }
 .bw-grid .card-feature-img {
-  padding: 20px 20px 0px 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 17px 17px 0px 0px;
-  margin-top: 30px;
-  transition-duration: 0.2s;
+  overflow: hidden;
 }
 .bw-grid .card-feature-img img, .bw-grid .card-feature-img video {
   border-radius: 7px 7px 0px 0px;
@@ -226,6 +244,7 @@ ul > li:before {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition-duration: 0.2s;
 }
 
 .inverse-card {

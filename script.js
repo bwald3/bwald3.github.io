@@ -14,9 +14,9 @@ loadFile("footer", "/footer.html");
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    smartphone: {
-       smooth: true
-   },
+  //   smartphone: {
+  //      smooth: true
+  //  },
    tablet: {
        smooth: true
    }
@@ -24,6 +24,7 @@ const scroller = new LocomotiveScroll({
 // Select elements for shrinking and growing
 const scaleDownDiv = document.querySelector('.scroll-scale'); // Shrinks
 const scaleUpDiv = document.querySelector('.scroll-scale-up'); // Grows
+const opacityDiv = document.querySelector('.scroll-opacity'); // Grows
 
 // Set up the total scroll height for scaling
 const scrollLimit = window.innerHeight * 0.8; // 80vh for scaling
