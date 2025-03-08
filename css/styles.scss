@@ -226,7 +226,6 @@ ul {
     overflow: hidden;
     // background-color: $mdlghtblack;
     .card-img-section{
-      min-height: 400px;
       // background-color: #007bff;
       padding:100px 20px 0px 20px;
       border-radius: $br;
@@ -502,6 +501,9 @@ ul {
   
     }
     .feature-card{
+      .card-img-section{
+        min-height: 400px;
+      }
       &.f-card-horizontal{
         flex-direction: row;
         .card-feature-img{
@@ -648,7 +650,7 @@ ul {
 
   section{ 
     min-height: 100vh;
-    // background-color: $drkblack;
+    background-color: $white;
   }
   .bw-full-width {
     width: 90%;
@@ -808,5 +810,35 @@ ul {
   span{
     transform: rotate(-45deg);
     font-size: 40px;
+  }
+}
+.work-btn{
+  display: flex;
+  align-items: center;
+  padding:10px 20px;
+  background-color: $drkblack;
+  color: $white !important;  
+  border-radius: 50px;
+  width: auto;
+  transition: ease 0.5s;
+  span{
+    margin-left:10px;
+    animation: arrowRotate 4s infinite 0.2s;
+    transform: rotate(-40deg);
+    transition: ease 0.2s;
+  }
+  &:hover{
+    background-color: #3c03e6 !important;
+    // color: $black !important;
+    transform: translate(3px, -3px);
+    span{
+      animation: none;
+      transform: rotate(-45deg) !important;
+    }
+  }
+}
+@keyframes arrowRotate {
+  50% {
+    transform: rotate(10deg);
   }
 }

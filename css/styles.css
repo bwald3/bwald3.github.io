@@ -216,7 +216,6 @@ ul > li:before {
   overflow: hidden;
 }
 .bw-grid .feature-card .card-img-section {
-  min-height: 400px;
   padding: 100px 20px 0px 20px;
   border-radius: 17px;
   display: flex;
@@ -451,6 +450,9 @@ ul > li:before {
   .bw-grid .grid-item-2 {
     grid-column: 1/span 2;
   }
+  .bw-grid .feature-card .card-img-section {
+    min-height: 400px;
+  }
   .bw-grid .feature-card.f-card-horizontal {
     flex-direction: row;
   }
@@ -586,6 +588,7 @@ ul > li:before {
 
 section {
   min-height: 100vh;
+  background-color: #f2f2f2;
 }
 
 .bw-full-width {
@@ -743,4 +746,35 @@ section {
 .arrow-btn-lg span {
   transform: rotate(-45deg);
   font-size: 40px;
+}
+
+.work-btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: #f2f2f2 !important;
+  border-radius: 50px;
+  width: auto;
+  transition: ease 0.5s;
+}
+.work-btn span {
+  margin-left: 10px;
+  animation: arrowRotate 4s infinite 0.2s;
+  transform: rotate(-40deg);
+  transition: ease 0.2s;
+}
+.work-btn:hover {
+  background-color: #3c03e6 !important;
+  transform: translate(3px, -3px);
+}
+.work-btn:hover span {
+  animation: none;
+  transform: rotate(-45deg) !important;
+}
+
+@keyframes arrowRotate {
+  50% {
+    transform: rotate(10deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
