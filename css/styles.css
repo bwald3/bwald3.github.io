@@ -211,7 +211,6 @@ ul > li:before {
 .bw-grid .feature-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 0px;
   position: relative;
   overflow: hidden;
@@ -231,6 +230,7 @@ ul > li:before {
 .bw-grid .feature-card .card-description {
   padding: 30px;
   border-bottom: 1px solid #d6d6d6;
+  flex: 1;
 }
 .bw-grid .feature-card a {
   color: inherit;
@@ -292,6 +292,21 @@ ul > li:before {
   background-color: rgba(0, 0, 0, 0.15);
 }
 
+.ow-home-bg {
+  background-color: #323232;
+  background-image: none !important;
+}
+
+.wa-profile-bg {
+  background-color: #E5E5E5;
+  background-image: none !important;
+}
+
+.wa-website-bg {
+  background-color: #86b8ef !important;
+  background-image: none !important;
+}
+
 .account-setup-bg {
   background-color: #e0a1ff !important;
   background-image: none !important;
@@ -301,14 +316,17 @@ ul > li:before {
   background-color: #8fbae7 !important;
   background-image: none !important;
 }
+.help-panel-bg .card-feature-img {
+  background-color: transparent;
+}
 
 .club-customizer-bg {
-  background-color: #E07F2C !important;
+  background-color: #f49e52 !important;
   background-image: none !important;
 }
 
 .user-nav-bg {
-  background-color: #295E22 !important;
+  background-color: #8d8d8d !important;
   background-image: none !important;
 }
 
@@ -377,6 +395,7 @@ ul > li:before {
 .work-page .side-nav {
   padding: 20px 20px 0px 20px;
   width: 100%;
+  max-width: 300px;
   background-color: #e7e7e7;
   border-radius: 17px;
   border: 1px solid #d6d6d6;
@@ -403,15 +422,16 @@ ul > li:before {
 .work-page .side-nav ul > li.active a {
   color: #3c03e6;
 }
-.work-page .work-process-divider {
+
+.work-process-divider {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.work-page .work-process-divider .divider-num {
+.work-process-divider .divider-num {
   margin-right: 10px;
 }
-.work-page .work-process-divider .line {
+.work-process-divider .line {
   margin-left: 10px;
   flex: 1;
   height: 1px;
@@ -470,6 +490,7 @@ ul > li:before {
 .tag-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .tag-row .tag {
   width: auto;
@@ -715,6 +736,7 @@ section {
   overflow: hidden;
   transition-duration: 0.6s;
   background-color: rgba(255, 255, 255, 0.2);
+  color: #f2f2f2 !important;
   right: 30px;
   top: 30px;
 }

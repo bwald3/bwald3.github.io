@@ -220,7 +220,7 @@ ul {
   .feature-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding:0px;
     position: relative;
     overflow: hidden;
@@ -241,6 +241,7 @@ ul {
     .card-description{
       padding:30px;
       border-bottom: 1px solid $lghtgray;
+      flex:1;
     }
     a{
       color:inherit;
@@ -349,6 +350,18 @@ ul {
     background-color: rgba(0,0,0, 0.15);
   }
 }
+.ow-home-bg{
+  background-color: $mdlghtblack;
+  background-image: none !important; 
+}
+.wa-profile-bg{
+  background-color: #E5E5E5;
+  background-image: none !important; 
+}
+.wa-website-bg{
+  background-color: #86b8ef !important;
+  background-image: none !important; 
+}
 .account-setup-bg{
   background-color: #e0a1ff !important;
   background-image: none !important; 
@@ -356,13 +369,16 @@ ul {
 .help-panel-bg{
   background-color: #8fbae7 !important;
   background-image: none !important;
+  .card-feature-img{
+    background-color: transparent;
+  }
 }
 .club-customizer-bg{
-  background-color: #E07F2C !important;
+  background-color: #f49e52 !important;
   background-image: none !important;
 }
 .user-nav-bg{
-  background-color: #295E22 !important;
+  background-color: #8d8d8d !important;
   background-image: none !important;
 }
 .contact-list-bg{
@@ -425,6 +441,7 @@ ul {
   .side-nav{
     padding:20px 20px 0px 20px;
     width: 100%;
+    max-width: 300px; 
     background-color: #e7e7e7;
     border-radius: $br;
     border: 1px solid $lghtgray;
@@ -453,19 +470,19 @@ ul {
       }
     }
   }
-  .work-process-divider{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    .divider-num{
-      margin-right:10px;
-    }
-    .line{
-      margin-left:10px;
-      flex:1;
-      height:1px;
-      background-color: $lghtgray;
-    }
+}
+.work-process-divider{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .divider-num{
+    margin-right:10px;
+  }
+  .line{
+    margin-left:10px;
+    flex:1;
+    height:1px;
+    background-color: $lghtgray;
   }
 }
 
@@ -536,6 +553,7 @@ ul {
 .tag-row{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   .tag{
     width: auto;
     padding: 10px 0px;
@@ -783,6 +801,7 @@ ul {
   overflow: hidden;
   transition-duration: .6s;
   background-color: rgba(255,255,255, 0.2);
+  color: $white !important;
   right:30px;
   top:30px;
   // color:$mdblack !important;
