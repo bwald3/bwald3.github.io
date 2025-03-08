@@ -7,8 +7,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: false;
   line-height: 1.65;
-  color: #f2f2f2;
-  background-color: #1a1a1a;
+  background-color: #f2f2f2;
+  color: #222222;
   position: relative;
 }
 
@@ -32,23 +32,23 @@ h1,
 .text-size-h1 {
   font-family: "Poppins", sans-serif;
   margin-top: 0;
-  font-size: 5rem;
+  font-size: 2.4rem;
   font-weight: 900;
 }
 
 h2,
 .text-size-h2 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 h3,
 .text-size-h3 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 
 h4,
 .text-size-h4 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 h5,
@@ -113,10 +113,8 @@ ul > li:before {
   height: 100%;
   overflow: hidden;
   background-color: hsl(0, 100%, 50%);
+  color: #f2f2f2;
   background-image: radial-gradient(at 40% 20%, hsl(28, 100%, 74%) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(189, 100%, 56%) 0px, transparent 50%), radial-gradient(at 0% 50%, hsl(355, 100%, 93%) 0px, transparent 50%), radial-gradient(at 80% 50%, hsl(340, 100%, 76%) 0px, transparent 50%), radial-gradient(at 0% 100%, hsl(22, 100%, 77%) 0px, transparent 50%), radial-gradient(at 80% 100%, hsl(242, 100%, 70%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(343, 100%, 76%) 0px, transparent 50%);
-}
-.hero-section .section-inner h1.secondary-h1 {
-  color: rgba(255, 255, 255, 0.6);
 }
 .hero-section .section-inner .hero-feature-img {
   padding: 20px 20px 0px 20px;
@@ -199,7 +197,7 @@ ul > li:before {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 40px 20px;
 }
 .bw-grid .grid-item-1 {
   padding: 30px;
@@ -217,11 +215,22 @@ ul > li:before {
   padding: 0px;
   position: relative;
   overflow: hidden;
-  background-color: #222222;
-  color: #eee;
+}
+.bw-grid .feature-card .card-img-section {
+  min-height: 400px;
+  padding: 100px 20px 0px 20px;
+  border-radius: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.bw-grid .feature-card .card-img-section .card-feature-img {
+  max-width: 800px;
 }
 .bw-grid .feature-card .card-description {
   padding: 30px;
+  border-bottom: 1px solid #d6d6d6;
 }
 .bw-grid .feature-card a {
   color: inherit;
@@ -230,13 +239,15 @@ ul > li:before {
 .bw-grid .feature-card:hover .arrow-btn-lg {
   transform: translate(15px, -15px);
 }
-.bw-grid .feature-card:hover .card-feature-img img, .bw-grid .feature-card:hover .card-feature-img video {
+.bw-grid .feature-card:hover .card-feature-img {
   transform: scale(1.05);
 }
 .bw-grid .card-feature-img {
+  padding: 12px 12px 0px 12px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 17px 17px 0px 0px;
   overflow: hidden;
+  transition-duration: 0.2s;
 }
 .bw-grid .card-feature-img img, .bw-grid .card-feature-img video {
   border-radius: 7px 7px 0px 0px;
@@ -244,7 +255,25 @@ ul > li:before {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition-duration: 0.2s;
+}
+
+.bw-list {
+  padding: 20px;
+}
+.bw-list .list-item {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  padding: 30px;
+  border-bottom: 1px solid #d6d6d6;
+}
+.bw-list .list-item:first-child {
+  border-top: 1px solid #d6d6d6;
+}
+.bw-list .list-item .w-3 {
+  grid-column: span 3;
+}
+.bw-list .list-item .w-7 {
+  grid-column: span 7;
 }
 
 .inverse-card {
@@ -264,12 +293,12 @@ ul > li:before {
 }
 
 .account-setup-bg {
-  background-color: #B856E9 !important;
+  background-color: #e0a1ff !important;
   background-image: none !important;
 }
 
 .help-panel-bg {
-  background-color: #007bff !important;
+  background-color: #8fbae7 !important;
   background-image: none !important;
 }
 
@@ -284,12 +313,12 @@ ul > li:before {
 }
 
 .contact-list-bg {
-  background-color: #653cdf !important;
+  background-color: #9cc2ee !important;
   background-image: none !important;
 }
 
 .fg-website-bg {
-  background-color: #c56c00;
+  background-color: #6a8d6c;
 }
 
 .about-orange {
@@ -341,17 +370,60 @@ ul > li:before {
   transition-timing-function: linear !important;
 }
 
+.work-page {
+  display: flex;
+  align-items: flex-start;
+}
+.work-page .side-nav {
+  padding: 20px 20px 0px 20px;
+  width: 100%;
+  background-color: #e7e7e7;
+  border-radius: 17px;
+  border: 1px solid #d6d6d6;
+  position: sticky;
+  top: 60px;
+}
+.work-page .side-nav ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0em;
+}
+.work-page .side-nav ul > li {
+  padding-bottom: 20px;
+}
+.work-page .side-nav ul > li:before {
+  display: none;
+}
+.work-page .side-nav ul > li a {
+  color: #1a1a1a;
+}
+.work-page .side-nav ul > li a:hover {
+  color: #424242;
+}
+.work-page .side-nav ul > li.active a {
+  color: #3c03e6;
+}
+.work-page .work-process-divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.work-page .work-process-divider .divider-num {
+  margin-right: 10px;
+}
+.work-page .work-process-divider .line {
+  margin-left: 10px;
+  flex: 1;
+  height: 1px;
+  background-color: #d6d6d6;
+}
+
 @media (min-width: 1024px) {
   h1,
   .text-size-h1 {
     font-family: "Poppins", sans-serif;
     margin-top: 0;
-    font-size: 8rem;
-    font-weight: 900;
-  }
-  h2,
-  .text-size-h2 {
-    font-size: 6rem;
+    font-size: 2.4rem;
   }
   .bw-grid {
     grid-template-columns: 1fr 1fr;
@@ -393,6 +465,40 @@ ul > li:before {
   width: auto;
   border-radius: 300px;
   padding: 5px 10px;
+}
+
+.tag-row {
+  display: flex;
+  flex-direction: row;
+}
+.tag-row .tag {
+  width: auto;
+  padding: 10px 0px;
+  white-space: nowrap;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tag-row .tag .dot {
+  min-width: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #222222;
+}
+
+.company-favicon {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.company-favicon img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .feature-tags {
@@ -459,7 +565,6 @@ ul > li:before {
 
 section {
   min-height: 100vh;
-  background-color: #1a1a1a;
 }
 
 .bw-full-width {
@@ -518,260 +623,6 @@ section {
   display: none;
   max-width: 80px;
   width: 100%;
-}
-
-.spotlight-section {
-  min-height: 0px;
-  border-top: 1px solid #424242;
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: #1a1a1a;
-  transition: background-color 0.3s ease;
-}
-.spotlight-section .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(242, 100%, 70%, 0.5) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(22, 100%, 77%, 0.5) 0px, transparent 50%);
-}
-.spotlight-section .section-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0px 20px;
-  width: 90%;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  overflow: hidden;
-  border-left: 1px solid #424242;
-  border-right: 1px solid #424242;
-  max-width: 1440px;
-  opacity: 0;
-  transition: opacity 2.5s;
-}
-.spotlight-section .section-inner .row {
-  margin: 0px !important;
-}
-.spotlight-section .section-inner .section-col {
-  padding: 30px;
-  /* plus sign */
-  /* text */
-  /* hover effect on button width */
-  /* hover effect button's text */
-  /* button click effect*/
-}
-.spotlight-section .section-inner .section-col:not(:first-child) {
-  border-left: 1px solid #424242;
-}
-.spotlight-section .section-inner .section-col .arrow-btn-lg {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 300px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
-  background-color: transparent;
-  border: 2px solid #f2f2f2;
-}
-.spotlight-section .section-inner .section-col span {
-  width: 100%;
-  transition-duration: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.spotlight-section .section-inner .section-col span svg {
-  width: 17px;
-}
-.spotlight-section .section-inner .section-col .hidden-text {
-  position: absolute;
-  white-space: nowrap;
-  left: 0%;
-  width: 0%;
-  opacity: 0;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 600;
-  transition-duration: 0.3s;
-}
-.spotlight-section .section-inner .section-col .arrow-btn-lg:hover {
-  width: 210px;
-  transition-duration: 0.3s;
-  background-color: #ec7923;
-  border-color: #ec7923;
-}
-.spotlight-section .section-inner .section-col .arrow-btn-lg:hover span {
-  width: 30%;
-  transition-duration: 0.3s;
-  padding-right: 20px;
-}
-.spotlight-section .section-inner .section-col .arrow-btn-lg:hover .hidden-text {
-  opacity: 1;
-  width: 70%;
-  transition-duration: 0.3s;
-  padding-left: 20px;
-}
-.spotlight-section .section-inner .section-col .arrow-btn-lg:active {
-  transform: translate(2px, 2px);
-}
-.spotlight-section .section-inner .section-col .arrow-btn-lg span {
-  transform: rotate(-45deg);
-  font-size: 35px;
-}
-.spotlight-section:hover {
-  cursor: pointer !important;
-}
-.spotlight-section:hover .section-col {
-  /* hover effect on button width */
-  /* hover effect button's text */
-  /* button click effect*/
-}
-.spotlight-section:hover .section-col .arrow-btn-lg {
-  width: 210px;
-  transition-duration: 0.3s;
-}
-.spotlight-section:hover .section-col .arrow-btn-lg span {
-  width: 30%;
-  transition-duration: 0.3s;
-  padding-right: 20px;
-}
-.spotlight-section:hover .section-col .arrow-btn-lg .hidden-text {
-  opacity: 1;
-  width: 70%;
-  transition-duration: 0.3s;
-  padding-left: 20px;
-}
-.spotlight-section:hover .section-col .arrow-btn-lg:active {
-  transform: translate(2px, 2px);
-}
-.spotlight-section:hover .section-col .arrow-btn-lg span {
-  transform: rotate(0deg);
-  font-size: 35px;
-}
-.spotlight-section.last-section {
-  border-bottom: 1px solid #424242;
-}
-.spotlight-section#accountSetup .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(336, 100%, 74%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(211, 100%, 87%, 0.9) 0px, transparent 50%);
-}
-.spotlight-section#helpPanel .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(207, 100%, 30%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 60%, 0.9) 0px, transparent 50%);
-}
-.spotlight-section#myOrangeWhip .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(0, 75%, 50%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(35, 100%, 45%, 0.9) 0px, transparent 50%);
-}
-.spotlight-section#userNavigation .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(55, 0%, 40%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 60%, 0.9) 0px, transparent 50%);
-}
-
-.grow-container {
-  width: 100%;
-  overflow: hidden;
-  min-height: 500px;
-  background-color: #ec7923;
-  border-radius: 17px;
-  transition: transform 0.4s ease-in-out;
-  transform: scale(1); /* Default scale */
-}
-
-.grow-container.grow {
-  transform: scale(1.05); /* Slightly larger when scrolled into view */
-}
-
-.spotlight .grid-section {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr;
-}
-.spotlight .grid-section .grid-1 {
-  grid-column: 1/span 3;
-}
-.spotlight .grid-section .grid-2 {
-  grid-column: 1/span3;
-}
-.spotlight .grid-section .grid-card {
-  background-color: #424242;
-  border-radius: 17px;
-  height: 100%;
-  max-height: 500px;
-  padding: 10px;
-  overflow: hidden;
-  position: relative;
-  transition: 0.3s ease;
-}
-.spotlight .grid-section .grid-card .card-heading {
-  display: flex;
-  justify-content: space-between;
-}
-.spotlight .grid-section .grid-card .card-spotlight-img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-  transform: scale(1);
-  border-radius: 7px;
-  transition: all 0.3s ease;
-}
-.spotlight .grid-section .grid-card.ow-blue {
-  background-color: #0072ff;
-}
-.spotlight .grid-section .grid-card.wa-blue {
-  background-color: #00559B;
-}
-.spotlight .grid-section .grid-card.fg-orange {
-  background-color: #F26722;
-}
-.spotlight .grid-section .grid-card.wa-green {
-  background-color: #367C36;
-}
-.spotlight .grid-section .grid-card .material-symbols-outlined {
-  transition: all 0.5s;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.2);
-  min-width: 40px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.spotlight .grid-section .grid-card:hover .material-symbols-outlined {
-  transform: translatex(10px);
-}
-.spotlight .grid-section .grid-card:hover .card-spotlight-img {
-  transform: scale(1.05);
-  border-radius: 17px;
-}
-.spotlight .section-background {
-  border-radius: 12px;
-  background-color: #222222;
-  box-shadow: 0px 10px 40px rgb(0, 0, 0);
-  padding: 5px;
-}
-.spotlight .section-background .section-inner {
-  border: 1px solid #424242;
-  background-color: #323232;
-  border-radius: 10px;
-  padding: 25px;
-  transition: all 0.5s ease-in-out;
-}
-.spotlight .section-background .section-inner:hover {
-  background-color: red;
 }
 
 .img-container {
@@ -849,85 +700,6 @@ section {
 .height-auto {
   min-height: auto;
   height: auto;
-}
-
-.w-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-}
-.w-grid .w-card {
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 17px;
-  background-color: #222222;
-  width: 100%;
-  overflow: hidden;
-}
-.w-grid .w-card .row {
-  margin: 0px;
-}
-.w-grid .w-card .section-col-img {
-  padding: 30px 30px 0px 30px;
-  overflow: hidden;
-}
-.w-grid .w-card .section-col-img .mock-screen {
-  width: 100%;
-  border-radius: 7px;
-  display: flex;
-  padding: 7px 7px 0px 7px;
-  position: relative;
-  background-color: rgba(242, 242, 242, 0.15);
-  transition: all 0.4s;
-}
-.w-grid .w-card .section-col-img .feature-img {
-  width: 100%;
-}
-.w-grid .w-card .section-col-img .feature-img img {
-  border-radius: 7px 7px 0px 0px;
-  width: 100%;
-}
-.w-grid .w-card .section-col-img .feature-img video {
-  width: 100%;
-  border-radius: 7px;
-}
-.w-grid .w-card:hover .mock-screen {
-  transform: scale(1.05);
-}
-.w-grid .w-card-horizontal {
-  flex-direction: row;
-  align-items: end;
-  grid-column: span 2/-1;
-}
-.w-grid .w-card-horizontal .section-col-text {
-  padding: 50px 30px;
-}
-.w-grid .w-card-horizontal .section-col-img {
-  padding: 30px;
-  display: flex;
-  align-items: center;
-}
-.w-grid .w-card-vertical {
-  flex-direction: column;
-}
-.w-grid .w-card-vertical .section-col-text {
-  padding: 20px;
-}
-.w-grid #accountSetup .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(336, 100%, 74%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(211, 100%, 87%, 0.9) 0px, transparent 50%);
-}
-.w-grid #helpPanel .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(207, 100%, 30%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 60%, 0.9) 0px, transparent 50%);
-}
-.w-grid #myOrangeWhip .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(0, 75%, 50%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(35, 100%, 45%, 0.9) 0px, transparent 50%);
-}
-.w-grid #userNavigation .mesh-gradient {
-  background-color: hsla(0, 0%, 100%, 0);
-  background-image: radial-gradient(at 55% 36%, hsla(55, 0%, 40%, 0.9) 0px, transparent 50%), radial-gradient(at 30% 100%, hsla(0, 0%, 60%, 0.9) 0px, transparent 50%);
 }
 
 .arrow-btn-lg {
