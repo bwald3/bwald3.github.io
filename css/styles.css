@@ -241,7 +241,10 @@ ul > li:before {
 .bw-grid .feature-card:hover .card-feature-img {
   transform: scale(1.05);
 }
-.bw-grid .feature-card.img-right .card-img-section {
+.bw-grid .feature-card.work-feature-card .card-img-section {
+  padding: 30px 20px 0px 20px;
+}
+.bw-grid .feature-card.work-feature-card.img-right .card-img-section {
   padding: 30px 0px 0px 0px;
   border-radius: 17px;
   display: flex;
@@ -249,13 +252,15 @@ ul > li:before {
   align-items: flex-end;
   overflow: hidden;
 }
-.bw-grid .feature-card.img-right .card-img-section .card-feature-img {
+.bw-grid .feature-card.work-feature-card.img-right .card-img-section .card-feature-img {
   max-width: 800px;
-  max-height: 300px;
   transform: translateX(30px);
 }
-.bw-grid .feature-card.card-height-set {
-  max-height: 500px;
+.bw-grid .feature-card.work-feature-card.card-height-set {
+  height: 700px;
+}
+.bw-grid .feature-card.work-feature-card.card-height-set .card-img-section {
+  align-items: flex-start;
 }
 .bw-grid .card-feature-img {
   padding: 12px 12px 0px 12px;
