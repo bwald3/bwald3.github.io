@@ -391,8 +391,11 @@ ul > li:before {
 .work-page {
   display: flex;
   align-items: flex-start;
+  padding-right: 20px;
+  background-color: #f2f2f2;
 }
 .work-page .side-nav {
+  margin-top: 20px;
   padding: 20px 20px 0px 20px;
   width: 100%;
   max-width: 300px;
