@@ -247,6 +247,7 @@ ul > li:before {
   border-radius: 17px 17px 0px 0px;
   overflow: hidden;
   transition-duration: 0.2s;
+  transform: translateY(10px);
 }
 .bw-grid .card-feature-img img, .bw-grid .card-feature-img video {
   border-radius: 7px 7px 0px 0px;
@@ -749,8 +750,9 @@ section {
 }
 
 .work-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
+  margin-top: 10px;
   padding: 10px 20px;
   background-color: #1a1a1a;
   color: #f2f2f2 !important;
