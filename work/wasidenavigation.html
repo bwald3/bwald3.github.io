@@ -32,7 +32,7 @@
         </div>
       </section>
       <div class="work-page" data-scroll-section>
-        <section class="bw-grid" data-scroll>
+        <section class="bw-grid">
           <div class="grid-item-1">
             <h2 class="h4">My Role</h2>
             <p>UI/UX Design | Frontend Development</p>
@@ -45,7 +45,7 @@
           <div class="grid-item-1" >
             <h2 class="h5">Overview</h2>
             <p>Users of our platform were struggling to navigate through our system quickly and effortlessly.</p>
-             <p>I led the design direction and overall user experience, along with the frontend development of a new navigation system.</p>
+            <p>I led the design direction and overall user experience, along with the frontend development of a new navigation system.</p>
             <p>The launch of the new navigation exceeded our expectations. Our community responded positively to the changes and expressed relief at the improved ease of navigation.</p>
           </div>
           <div class="grid-item-2" id="problemUN">
@@ -56,9 +56,13 @@
             </div>
             <p>Users struggle to navigate the system quickly and effortlessly.</p>        
           </div>
-          <div class="grid-item-1" >
-            <h3>Problem</h3>
-            <p>Users struggle to navigate the system quickly and effortlessly.</p>        
+          <div class="grid-item-2 work-card" id="problemUN">
+            <div class="card-feature-img">
+              <img src="/img/sidenav/side-nav-old.jpg" />
+            </div>
+            <span class="des-tag">
+              OLD
+            </span>        
           </div>
           <div class="grid-item-2" id="researchUN">
             <div class="work-process-divider">
@@ -67,12 +71,16 @@
               <span class="line"></span>
             </div>
           </div>
-          <div class="grid-item-1" >
-            <h3>Research</h3>
-            <h6>Major Pain Points:</h6>
-            <p>Lack of visual representation of each of the different navigation menu items</p>
-            <p>Having to scroll all the way to the top of a page to access navigation.</p>
-            <p>Difficult to operate on mobile devices.</p>
+          <div class="grid-item-2 work-card" >
+            <div>
+              <h6>Major Pain Points:</h6>
+              <p>Lack of visual representation of each of the different navigation menu items</p>
+              <p>Having to scroll all the way to the top of a page to access navigation.</p>
+              <p>Difficult to operate on mobile devices.</p>
+            </div>
+            <div class="card-feature-img">
+              <img src="/img/sidenav/side-nav-old.jpg" />
+            </div>
           </div>
           <div class="grid-item-2" id="highlightsUN">
             <div class="work-process-divider">
@@ -81,13 +89,40 @@
               <span class="line"></span>
             </div>
           </div>
-          <div class="grid-item-2">
-            <div>
+          <div class="grid-item-2 feature-card">
+            <div class="card-img-section contact-list-bg">
+              <div class="card-feature-img">
+                <video src="/img/sidenav/side-nav-highlight-vid.mp4" autoplay muted width="100%" loop="loop" ></video>
+              </div>
+            </div>
+            <div class="card-description">
               <h3>Fixed Menu</h3>
               <p>Use of a fixed side navigation so users can quickly navigate the system with unnecessary scrolling back upwards.</p>
             </div>
           </div>
-          <div class="grid-item-2" id="conclusionUN">
+          <div class="grid-item-1 feature-card img-right card-height-set">
+            <div class="card-img-section contact-list-bg">
+              <div class="card-feature-img">
+                <img src="/img/sidenav/side-nav-icons.jpg" />
+              </div>
+            </div>
+            <div class="card-description">
+              <h3>Visual Representation of Nav Items</h3>
+              <p>Added Icons as the main focal point to enhance visual memory for users to easily navigate the system</p>
+            </div>
+          </div>
+          <div class="grid-item-1 feature-card card-height-set">
+            <div class="card-img-section contact-list-bg">
+              <div class="card-feature-img">
+                <video src="/img/sidenav/mobile-menu.mp4" autoplay muted width="100%" loop="loop" ></video>
+              </div>
+            </div>
+            <div class="card-description">
+              <h3>Enhanced Mobile Menu</h3>
+              <p>Simple Slideout menu that is easy to operate with touching on mobile</p>
+            </div>
+          </div>
+          <div class="grid-item-1" id="conclusionUN">
             <div class="work-process-divider">
               <span class="divider-num">05</span>
               <h3>Conclusion</h3>
@@ -101,22 +136,24 @@
               <a>01 Overview</a>
             </li>
             <li class="active">
-              <a href="#problemUN" class="scroll-link">02 Problem</a>
+              <a href="#problemUN">02 Problem</a>
             </li>
             <li>
-              <a href="#researchUN" class="scroll-link">03 Research</a>
+              <a href="#researchUN">03 Research</a>
             </li>
             <li>
-              <a href="#highlightsUN" class="scroll-link">04 Highlights</a>
+              <a href="#highlightsUN">04 Highlights</a>
             </li>
             <li>
-              <a href="#conclusionUN" class="scroll-link">05 Conclusion</a>
+              <a href="#conclusionUN">05 Conclusion</a>
             </li>
           </ul>
         </div>
       </div>
       
     </div> 
+    <div id="footer"></div>
+
     <script src="/locomotive-scroll.min.js"></script> 
     <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
