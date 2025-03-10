@@ -353,12 +353,12 @@ ul > li:before {
 }
 
 .ow-home-bg {
-  background-color: #323232;
+  background-color: #323232 !important;
   background-image: none !important;
 }
 
 .wa-profile-bg {
-  background-color: #E5E5E5;
+  background-color: #E5E5E5 !important;
   background-image: none !important;
 }
 
@@ -396,7 +396,8 @@ ul > li:before {
 }
 
 .fg-website-bg {
-  background-color: #6a8d6c;
+  background-color: #6a8d6c !important;
+  background-image: none !important;
 }
 
 .about-orange {
@@ -853,6 +854,10 @@ section {
   font-size: 40px;
 }
 
+.btn-group {
+  margin-bottom: 20px;
+}
+
 .work-btn {
   display: inline-flex;
   align-items: center;
@@ -863,6 +868,8 @@ section {
   border-radius: 50px;
   width: auto;
   transition: ease 0.5s;
+  text-decoration: none !important;
+  cursor: pointer;
 }
 .work-btn span {
   margin-left: 10px;
@@ -877,6 +884,14 @@ section {
 .work-btn:hover span {
   animation: none;
   transform: rotate(-45deg) !important;
+}
+.work-btn.btn-alt {
+  background-color: transparent;
+  color: #3c03e6 !important;
+  border: 1px solid #3c03e6;
+}
+.work-btn.btn-alt:hover {
+  background-color: rgba(60, 3, 230, 0.2156862745) !important;
 }
 
 @keyframes arrowRotate {
