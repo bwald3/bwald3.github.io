@@ -20,68 +20,16 @@
       <div class="scaling-hero-inner ow-home-bg">
         <div class="work-heading">
           <h2>Orange Whip Homepage Redesign</h2>
-          <div class="feature-tags">
-            <div class="tag">Web Design</div>
-            <div class="tag">Wordpress</div>
-          </div>
         </div>
         <div class="hero-feature-img">
           <img src="/img/whip-home-page.jpg" />
         </div>
       </div>
     </div>
-      <style>
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  /* height: 100%; */
-}
-
-
-
-.content {
-  margin-top: 80vh; /* Start below the hero */
-  background-color: #f5f5f5;
-  padding: 20px;
-}
-      </style>
-      <script>
-document.addEventListener("scroll", () => {
-  const hero = document.querySelector(".scaling-hero");
-  const scrollY = window.scrollY;
-  const initialHeight = window.innerHeight * 0.8; // Start at 80vh
-
-  // Shrink the hero based on scroll position
-  let newHeight = Math.max(0, initialHeight - scrollY);
-  hero.style.height = `${newHeight}px`;
-
-  // Add or remove the "shrink" class based on scroll position (100px)
-    if (scrollY > 20) { // Scrolling past 100px
-    hero.classList.add("shrink");
-  } else { // When scroll position is less than 100px
-    hero.classList.remove("shrink");
-  }
-});
-      </script>
-    <div class="content" data-scroll-container>
-      <!-- <section class="hero-section hero-work">
-        <div class="section-inner scroll-scale ow-home-bg">
-          <div class="work-heading">
-            <h2>Orange Whip Homepage Redesign</h2>
-            <div class="feature-tags">
-              <div class="tag">Web Design</div>
-              <div class="tag">Wordpress</div>
-            </div>
-          </div>
-          <div class="hero-feature-img">
-            <img src="/img/whip-home-page.jpg" />
-          </div>
-        </div>
-      </section> -->
+    <div class="site-content" data-scroll-container>
       <div class="work-page" data-scroll-section>
         <section class="bw-grid">
-          <div class="grid-item-1">
+          <div class="grid-item-1" id="overviewOW">
             <h2 class="h4">Built With</h2>
             <p>Wordpress | WooCommerce | Elementor</p>
             <h2 class="h4">Timeline</h2>
@@ -170,7 +118,7 @@ document.addEventListener("scroll", () => {
           <div class="side-nav">
             <ul>
               <li>
-                <a>01 Overview</a>
+                <a href="#overviewOW">01 Overview</a>
               </li>
               <li>
                 <a href="#highlightsOW">03 Highlights</a>
@@ -182,7 +130,7 @@ document.addEventListener("scroll", () => {
     </div> 
     <div id="footer"></div>
     <!-- <script src="/locomotive-scroll.min.js"></script> x -->
-    <!-- <script src="/script.js"></script> -->
+    <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

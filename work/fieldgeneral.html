@@ -16,24 +16,20 @@
   </head>
   <body>
     <div id="navHeader"></div>
-    <div data-scroll-container>
-      <section class="hero-section hero-work">
-        <div class="section-inner scroll-scale fg-website-bg">
-          <div class="work-heading">
-            <h2>Field General Website</h2>
-            <div class="feature-tags">
-              <div class="tag">Web Design</div>
-              <div class="tag">Wordpress</div>
-            </div>
-          </div>
-          <div class="hero-feature-img">
-            <img src="/img/field-general-website.jpg">
-          </div>
+    <div class="scaling-hero">
+      <div class="scaling-hero-inner work-hero fg-website-bg">
+        <div class="work-heading">
+          <h2>Field General Website</h2>
         </div>
-      </section>
+        <div class="hero-feature-img">
+          <img src="/img/field-general-website.jpg">
+        </div>
+      </div>
+    </div>
+    <div class="site-content" data-scroll-container>
       <div class="work-page" data-scroll-section>
         <section class="bw-grid">
-          <div class="grid-item-1">
+          <div class="grid-item-1" id="overviewFG">
             <h2 class="h4">Built With</h2>
             <p>Wordpress | HivePress | WooCommerce | Stripe</p>
             <h2 class="h4">Timeline</h2>
@@ -110,7 +106,7 @@
           <div class="side-nav">
             <ul>
               <li>
-                <a>01 Overview</a>
+                <a href="#overviewFG">01 Overview</a>
               </li>
               <li>
                 <a href="#researchFG">02 Research</a>
@@ -133,7 +129,7 @@
          </div>
       </div>
     </div> 
-    <script src="/locomotive-scroll.min.js"></script> 
+    <div id="footer"></div>
     <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

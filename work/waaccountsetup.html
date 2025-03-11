@@ -16,24 +16,20 @@
   </head>
   <body>
     <div id="navHeader"></div>
-    <div data-scroll-container>
-      <section class="hero-section hero-work">
-        <div class="section-inner scroll-scale account-setup-bg">
-          <div class="work-heading">
-            <h2>Account Setup</h2>
-            <div class="feature-tags">
-              <div class="tag">UI/UX</div>
-              <div class="tag">Frontend Dev</div>
-            </div>
-          </div>
-          <div class="hero-feature-img">
-            <video src="/img/user-menu.mp4" autoplay muted width="100%" loop="loop"></video>
-          </div>
+    <div class="scaling-hero">
+      <div class="scaling-hero-inner work-hero account-setup-bg">
+        <div class="work-heading">
+          <h2>Account Setup</h2>
         </div>
-      </section>
+        <div class="hero-feature-img">
+          <video src="/img/account-setup-resized.mp4" autoplay muted width="100%" loop="loop"></video>
+        </div>
+      </div>
+    </div>
+    <div class="site-content" data-scroll-container>
       <div class="work-page" data-scroll-section>
         <section class="bw-grid">
-          <div class="grid-item-1">
+          <div class="grid-item-1" id="overviewSETUP">
             <h2 class="h4">My Role</h2>
             <p>UI/UX Design | Frontend Development</p>
             <h2 class="h4">Team</h2>
@@ -137,7 +133,7 @@
           <div class="side-nav">
             <ul>
               <li>
-                <a>01 Overview</a>
+                <a href="overviewSETUP">01 Overview</a>
               </li>
               <li>
                 <a href="#researchSETUP">02 Problem</a>
@@ -167,7 +163,6 @@
       </div>
     </div> 
     <div id="footer"></div>
-    <script src="/locomotive-scroll.min.js"></script> 
     <script src="/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

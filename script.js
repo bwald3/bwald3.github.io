@@ -13,49 +13,28 @@ async function initPage() {
   await loadFile("navHeader", "/header.html");
   await loadFile("footer", "/footer.html");
 
-  // Initialize Locomotive Scroll after dynamic content loads
-  const scroller = new LocomotiveScroll({
-    el: document.querySelector("[data-scroll-container]"),
-    smooth: true,
-    tablet: { smooth: true }
-  });
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
 
-  // Select elements for shrinking and growing
-  const scaleDownDiv = document.querySelector(".scroll-scale"); // Shrinks
-  const scaleUpDiv = document.querySelector(".scroll-scale-up"); // Grows
-  const opacityDiv = document.querySelector(".scroll-opacity"); // Fades
+    // Hero shrink logic
+    const hero = document.querySelector(".scaling-hero");
+    const initialHeight = window.innerHeight * 0.8; // Start at 80vh
+    let newHeight = Math.max(0, initialHeight - scrollY);
+    if (hero) {
+      hero.style.height = `${newHeight}px`;
 
-  const scrollLimit = window.innerHeight * 0.8; // 80vh for scaling
-
-  // Locomotive Scroll event listener
-  scroller.on("scroll", (obj) => {
-    const scrollPosition = obj.scroll.y;
-
-    // SHRINK LOGIC
-    if (scaleDownDiv && scrollPosition < scrollLimit) {
-      let progress = scrollPosition / scrollLimit;
-      progress = Math.min(Math.max(progress, 0), 1);
-      const scale = 1 - progress * 0.2;
-      const opacity = 1 - progress;
-
-      scaleDownDiv.style.transform = `scale(${scale})`;
-      scaleDownDiv.style.opacity = opacity;
+      // Add or remove the "shrink" class based on scroll position
+      if (scrollY > 20) { // Scrolling past 20px
+        hero.classList.add("shrink");
+      } else { // When scroll position is less than 20px
+        hero.classList.remove("shrink");
+      }
     }
 
-    // GROW LOGIC
-    if (scaleUpDiv && scrollPosition < scrollLimit) {
-      let progress = scrollPosition / scrollLimit;
-      progress = Math.min(Math.max(progress, 0), 1);
-      const scale = 1 + progress * 0.2;
-      scaleUpDiv.style.transform = `scale(${scale})`;
-    }
-  });
-
-  // Navbar scroll behavior (avoid conflicts with Locomotive Scroll)
-  scroller.on("scroll", (obj) => {
+    // Navbar scroll behavior
     const navbar = document.getElementById("navBar");
     if (navbar) {
-      if (obj.scroll.y > 50) {
+      if (scrollY > 50) { // Scrolling past 50px
         navbar.classList.add("scrolled");
       } else {
         navbar.classList.remove("scrolled");
