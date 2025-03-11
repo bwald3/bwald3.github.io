@@ -16,8 +16,56 @@
   </head>
   <body>
     <div id="navHeader"></div>
-    <div data-scroll-container>
-      <section class="hero-section hero-work">
+    <div class="scaling-hero">
+      <div class="scaling-hero-inner ow-home-bg">
+        <div class="work-heading">
+          <h2>Orange Whip Homepage Redesign</h2>
+          <div class="feature-tags">
+            <div class="tag">Web Design</div>
+            <div class="tag">Wordpress</div>
+          </div>
+        </div>
+        <div class="hero-feature-img">
+          <img src="/img/whip-home-page.jpg" />
+        </div>
+      </div>
+    </div>
+      <style>
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* height: 100%; */
+}
+
+
+
+.content {
+  margin-top: 80vh; /* Start below the hero */
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+      </style>
+      <script>
+document.addEventListener("scroll", () => {
+  const hero = document.querySelector(".scaling-hero");
+  const scrollY = window.scrollY;
+  const initialHeight = window.innerHeight * 0.8; // Start at 80vh
+
+  // Shrink the hero based on scroll position
+  let newHeight = Math.max(0, initialHeight - scrollY);
+  hero.style.height = `${newHeight}px`;
+
+  // Add or remove the "shrink" class based on scroll position (100px)
+    if (scrollY > 20) { // Scrolling past 100px
+    hero.classList.add("shrink");
+  } else { // When scroll position is less than 100px
+    hero.classList.remove("shrink");
+  }
+});
+      </script>
+    <div class="content" data-scroll-container>
+      <!-- <section class="hero-section hero-work">
         <div class="section-inner scroll-scale ow-home-bg">
           <div class="work-heading">
             <h2>Orange Whip Homepage Redesign</h2>
@@ -30,7 +78,7 @@
             <img src="/img/whip-home-page.jpg" />
           </div>
         </div>
-      </section>
+      </section> -->
       <div class="work-page" data-scroll-section>
         <section class="bw-grid">
           <div class="grid-item-1">
@@ -44,27 +92,8 @@
             <p>Leading the homepage redesign for a website that needed a more modern, engaging, and user-friendly experience. The goal was to update the visual style, improve usability, and enhance content hierarchy to better align with current design trends and user expectations.</p>
             <p>I focused on refining the layout, typography, and interactions to create a cleaner and more intuitive browsing experience. The new design emphasizes accessibility, responsiveness, and a visually compelling aesthetic while ensuring smooth navigation and clear calls to action sections.</p>
           </div>
-          <div class="grid-item-2" id="researchOW">
+          <div class="grid-item-2" id="highlightsOW">
             <div class="work-process-divider">
-              <span class="divider-num">02</span>
-              <h3>Research</h3>
-              <span class="line"></span>
-            </div>
-          </div>
-          <div class="grid-item-2 work-card" >
-            <div>
-              <h6>Major Pain Points:</h6>
-              <p>Lack of visual representation of each of the different navigation menu items</p>
-              <p>Having to scroll all the way to the top of a page to access navigation.</p>
-              <p>Difficult to operate on mobile devices.</p>
-            </div>
-            <div class="card-feature-img">
-              <img src="/img/sidenav/side-nav-old.jpg" />
-            </div>
-          </div>
-          <div class="grid-item-2" id="highlightsCC">
-            <div class="work-process-divider">
-              <span class="divider-num">03</span>
               <h3>Highlights</h3>
               <span class="line"></span>
             </div>
@@ -72,34 +101,65 @@
           <div class="grid-item-2 feature-card">
             <div class="card-img-section ow-home-bg">
               <div class="card-feature-img">
-                <video src="/img/sidenav/side-nav-highlight-vid.mp4" autoplay muted width="100%" loop="loop" ></video>
+                <img src="/img/owWebsite/ow-website-menu.jpg" />
               </div>
             </div>
             <div class="card-description">
-              <h3>Fixed Menu</h3>
-              <p>Use of a fixed side navigation so users can quickly navigate the system with unnecessary scrolling back upwards.</p>
+              <h3>Enhanced Navigation</h3>
+              <p>A new navigation and menu for updated look and to achieve simple navigation with quick access to top products.</p>
             </div>
           </div>
-          <div class="grid-item-1 feature-card work-feature-card img-right card-height-set">
+          <div class="grid-item-1 feature-card">
             <div class="card-img-section ow-home-bg">
               <div class="card-feature-img">
-                <img src="/img/sidenav/side-nav-icons.jpg" />
+                <img src="/img/owWebsite/ow-website-new-products.jpg" />
               </div>
             </div>
             <div class="card-description">
-              <h3>Visual Representation of Nav Items</h3>
-              <p>Added Icons as the main focal point to enhance visual memory for users to easily navigate the system</p>
+              <h3>New Product Slider</h3>
+              <p>An engaging slider to drive traffic for the newest products released.</p>
             </div>
           </div>
-          <div class="grid-item-1 feature-card work-feature-card card-height-set">
+          <div class="grid-item-1 feature-card">
             <div class="card-img-section ow-home-bg">
               <div class="card-feature-img">
-                <video src="/img/sidenav/mobile-menu.mp4" autoplay muted width="100%" loop="loop" ></video>
+                <img src="/img/owWebsite/ow-website-cta-credibility-section.jpg" />
               </div>
             </div>
             <div class="card-description">
-              <h3>Enhanced Mobile Menu</h3>
-              <p>Simple Slideout menu that is easy to operate with touching on mobile</p>
+              <h3>New grid system</h3>
+              <p>A new grid system for the home page that showcases expected grid behavior and pushing the boundaries of the grid.</p>
+            </div>
+          </div>
+          <div class="grid-item-2 feature-card">
+            <div class="card-img-section ow-home-bg">
+              <div class="card-feature-img">
+                <img src="/img/owWebsite/ow-website-ecommerce-categories.jpg" />
+              </div>
+            </div>
+            <div class="card-description">
+              <h3>CTA Sections for product categories</h3>
+              <p>Addition of simple CTA sections for product categories to drive traffic onto the shop pages.</p>
+            </div>
+          </div>
+          <div class="grid-item-2 feature-card">
+            <div class="card-img-section ow-home-bg">
+              <div class="card-feature-img" style="padding:0px; background-color: transparent;">
+                <img src="/img/owWebsite/ow-home-mobile.png" />
+              </div>
+            </div>
+            <div class="card-description">
+              <h3>Seamless mobile navigation experience</h3>
+            </div>
+          </div>
+          <div class="grid-item-2 feature-card">
+            <div class="card-img-section ow-home-bg">
+              <div class="card-feature-img" style="padding:0px; background-color: transparent;">
+                <img src="/img/owWebsite/ow-home-mobile-2.png" />
+              </div>
+            </div>
+            <div class="card-description">
+              <h3>Mobile first design approach</h3>
             </div>
           </div>
          </section>
@@ -113,9 +173,6 @@
                 <a>01 Overview</a>
               </li>
               <li>
-                <a href="#researchOW">02 Research</a>
-              </li>
-              <li>
                 <a href="#highlightsOW">03 Highlights</a>
               </li>
             </ul>
@@ -124,8 +181,8 @@
       </div>
     </div> 
     <div id="footer"></div>
-    <script src="/locomotive-scroll.min.js"></script> 
-    <script src="/script.js"></script>
+    <!-- <script src="/locomotive-scroll.min.js"></script> x -->
+    <!-- <script src="/script.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
