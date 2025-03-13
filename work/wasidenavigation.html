@@ -110,8 +110,11 @@
           <div class="grid-item-1 feature-card work-feature-card card-height-set">
             <div class="card-img-section contact-list-bg">
               <div class="card-feature-img">
-                <video src="/img/sidenav/mobile-menu.mp4" autoplay muted width="100%" loop="loop" ></video>
+                <img src="/img/sidenav/cover-img-mobile.jpg" />
               </div>
+              <button class="play-video-btn open-modal"><span class="material-symbols-outlined">
+                play_arrow
+                </span></button>
             </div>
             <div class="card-description">
               <h3>Enhanced Mobile Menu</h3>
@@ -163,6 +166,50 @@
       </div>
       
     </div> 
+    <button class="play-video-btn open-modal"><span class="material-symbols-outlined">
+      play_arrow
+      </span></button>
+
+    <div class="modal" id="videoModal">
+      <div class="modal-content">
+          <span class="close-modal"><span class="material-symbols-outlined">
+            close
+            </span></span>
+          <div class="video-container">
+              <video id="modalVideo" controls muted>
+                  <source src="/img/sidenav/mobile-menu.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      const openBtn = document.querySelector('.open-modal');
+      const modal = document.getElementById('videoModal');
+      const closeBtn = document.querySelector('.close-modal');
+      const video = document.getElementById('modalVideo');
+
+      // Open Modal
+      openBtn.addEventListener('click', () => {
+          modal.style.display = 'flex';
+          video.play()
+      });
+
+      // Close Modal
+      closeBtn.addEventListener('click', () => {
+          modal.style.display = 'none';
+          video.pause(); // Pause video when closing
+      });
+
+      // Close Modal on Background Click
+      modal.addEventListener('click', (e) => {
+          if (e.target === modal) {
+              modal.style.display = 'none';
+              video.pause();
+          }
+      });
+  </script>
     <div id="footer"></div>
 
     <script src="/script.js"></script>
