@@ -12,6 +12,8 @@ async function loadFile(id, file) {
 async function initPage() {
   await loadFile("navHeader", "/header.html");
   await loadFile("footer", "/footer.html");
+  document.getElementById("getYear").textContent = new Date().getFullYear();
+
 
   window.addEventListener("scroll", () => {
     const scrollY = window.scrollY;
