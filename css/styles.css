@@ -1530,7 +1530,7 @@ section {
   grid-template-columns: repeat(12, 1fr); /* 12 flexible columns */
   gap: 10px;
   width: 100%;
-  max-width: 1245px;
+  max-width: 1255px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 15px;
