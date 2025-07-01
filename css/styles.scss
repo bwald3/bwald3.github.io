@@ -1657,3 +1657,53 @@ $animationSpeed: 35s;
         -webkit-user-select: none;
         -ms-user-select: none;
       }
+
+.b--background{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1260px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0px;
+  pointer-events: none; 
+  z-index: 0;
+  padding:0px 10px;
+  .b--line{
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100%;
+    &.line--8{
+      grid-column: span 8;
+    }
+    &.line--4{
+      grid-column: span 4;
+    }
+  }
+}
+.b--container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 flexible columns */
+  gap: 10px;
+  width: 100%;
+  max-width: 1240px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  .col--12{
+    grid-column: span 12;
+  }
+  .col--4{
+    grid-column: span 4;
+  }
+}
+.b--big--text{
+  position: absolute;
+  bottom:10px;
+  left:0px;
+  width: 100%;
+  z-index: -1;
+}
