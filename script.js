@@ -184,3 +184,15 @@ document.addEventListener("DOMContentLoaded", () => {
       modalImage.style.cursor = "grab";
   });
 });
+
+// script.js
+function setMobileVH() {
+  // 1% of the viewport height
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Run on load and resize
+window.addEventListener('resize', setMobileVH);
+window.addEventListener('load', setMobileVH);
+setMobileVH();
