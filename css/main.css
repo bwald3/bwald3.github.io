@@ -2506,7 +2506,7 @@ h2 {
 }
 
 .scroll-snap-item {
-  height: calc(var(--vh) * 100);
+  height: calc(var(--vh) * 100 - env(safe-area-inset-bottom));
   scroll-snap-align: start;
   padding: 0.5rem;
 }

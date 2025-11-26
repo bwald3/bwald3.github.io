@@ -183,8 +183,8 @@ h2 { @include fluid-font(32, 52); }
 }
 
 .scroll-snap-item {
-    height: calc(var(--vh) * 100);
-  scroll-snap-align: start;
+    height: calc(var(--vh) * 100 - env(safe-area-inset-bottom));
+    scroll-snap-align: start;
   padding: rem(8);
 
   .item-container {
